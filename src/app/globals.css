@@ -5,6 +5,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #0a364f;
+  --primaryDark: '#072537';
+  --primaryLight: '#3a5e72';
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,5 +20,124 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: --font-sans, sans-serif;
+}
+
+/* Initial state of the dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: #4a4a4a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: max-content;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+/* Show the dropdown when hovering over the parent element */
+.group:hover .dropdown-menu {
+  opacity: 1; /* Fade in */
+  transform: translateY(0px); /* Slide up into view */
+  pointer-events: auto; /* Enable interaction with the dropdown */
+}
+
+/* Hover effect for links */
+.dropdown-menu a {
+  padding: 8px 16px;
+  display: block;
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.dropdown-menu a:hover {
+  color: white;
+}
+
+.servicesBg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)),
+    url('/images/services-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projects {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/projectsBg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.workQuality {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/projectsBg.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.testimonials {
+  position: relative; /* Ensure ::before is positioned relative to this element */
+}
+
+.testimonials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #6c8695;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 70%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.15;
+
+}
+
+
+/* Media query for screens below 1024px */
+@media (max-width: 1024px) {
+  .testimonials::before {
+    width: 100%;
+  }
+}
+
+.text-bg-color{
+  background-color: #3a5e72;
+  color: white !important;
+  padding: 8px 12px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  width: max-content;
+}
+
+.text-bg-white{
+  background-color: white ;
+  color: #3a5e72 !important;
+  padding: 8px 12px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  width: max-content;
+}
+
+.swiper-slide {
+  height: auto !important;
 }

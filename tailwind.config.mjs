@@ -10,7 +10,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary:"#0a364f",
+        primaryDark:"#072537",
+        primaryLight:"#3a5e72",
+        grayBg:"#fbfbfb"
       },
+      fontSize:{
+        'xxs':"8px"
+      }
     },
   },
   plugins: [],
