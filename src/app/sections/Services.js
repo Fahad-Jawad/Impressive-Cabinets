@@ -69,7 +69,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className='flex flex-col gap-2 z-20 relative'>
-                  <div className='text-primary text-9xl font-bold serviceNumber  group-hover:text-gray-300 group-hover:opacity-20 transition-opacity duration-300'>
+                  <div className='text-primary text-9xl font-bold serviceNumber  group-hover:text-white group-hover:opacity-90 transition-opacity duration-300'>
                     01
                   </div>
                   <h3 className='text-xl font-semibold text-gray-900 mt-4 group-hover:text-white transition-colors duration-300'>
@@ -102,7 +102,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className='flex flex-col gap-2 z-20 relative'>
-                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-gray-300 group-hover:opacity-20 transition-opacity duration-300'>
+                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-white group-hover:opacity-90 transition-opacity duration-300'>
                     02
                   </div>
                   <h3 className='text-xl font-semibold text-gray-900 mt-4 group-hover:text-white transition-colors duration-300'>
@@ -135,7 +135,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className='flex flex-col gap-2 z-20 relative'>
-                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-gray-300 group-hover:opacity-20 transition-opacity duration-300'>
+                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-white group-hover:opacity-90 transition-opacity duration-300'>
                     03
                   </div>
                   <h3 className='text-xl font-semibold text-gray-900 mt-4 group-hover:text-white transition-colors duration-300'>
@@ -168,7 +168,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className='flex flex-col gap-2 z-20 relative'>
-                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-gray-300 group-hover:opacity-20 transition-opacity duration-300'>
+                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-white group-hover:opacity-90 transition-opacity duration-300'>
                     04
                   </div>
                   <h3 className='text-xl font-semibold text-gray-900 mt-4 group-hover:text-white transition-colors duration-300'>
@@ -201,7 +201,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className='flex flex-col gap-2 z-20 relative'>
-                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-gray-300 group-hover:opacity-20 transition-opacity duration-300'>
+                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-white group-hover:opacity-90 transition-opacity duration-300'>
                     05
                   </div>
                   <h3 className='text-xl font-semibold text-gray-900 mt-4 group-hover:text-white transition-colors duration-300'>
@@ -234,7 +234,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className='flex flex-col gap-2 z-20 relative'>
-                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-gray-300 group-hover:opacity-20 transition-opacity duration-300'>
+                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-white group-hover:opacity-90 transition-opacity duration-300'>
                     06
                   </div>
                   <h3 className='text-xl font-semibold text-gray-900 mt-4 group-hover:text-white transition-colors duration-300'>

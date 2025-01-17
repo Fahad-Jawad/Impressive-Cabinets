@@ -46,14 +46,14 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className='hidden lg:flex items-center space-x-8 text-base'>
-            <Link href='/' className='hover:text-yellow-400 py-3'>
+            <Link href='/' className=' py-3 underline-animation'>
               Home
             </Link>
             <div className='relative group menu'>
               <div className='flex items-center'>
                 <Link
                   href='/about-us'
-                  className='hover:text-yellow-400 flex items-center py-3'
+                  className=' flex items-center py-3 '
                 >
                   About
                   <span className='ml-2 transition-transform transform group-hover:rotate-180'>
@@ -90,14 +90,14 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link href='/products' className='hover:text-yellow-400 py-3'>
+            <Link href='/products' className=' py-3 underline-animation'>
               3D Laminate
             </Link>
-            <Link href='/projects' className='hover:text-yellow-400 py-3'>
+            <Link href='/projects' className=' py-3 underline-animation'>
               Projects
             </Link>
 
-            <Link href='/contact-us' className='hover:text-yellow-400 py-3'>
+            <Link href='/contact-us' className=' py-3 underline-animation'>
               Contact Us
             </Link>
           </div>
