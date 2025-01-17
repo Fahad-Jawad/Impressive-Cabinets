@@ -17,7 +17,12 @@ export default {
       },
       fontSize:{
         'xxs':"8px"
-      }
+      ,
+     },
+     animation: {
+      'spin-fast': 'spin 0.8s linear infinite',
+      pulse: 'pulse 1.5s ease-in-out infinite',
+    },
     },
   },
   plugins: [],

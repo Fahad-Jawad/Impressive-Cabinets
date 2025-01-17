@@ -13,9 +13,19 @@ export default function Navbar() {
     setIsMobileNavOpen(!isMobileNavOpen);
   };
 
-  const toggleAccordion = (index) => {
-    setActiveAccordion(activeAccordion === index ? null : index);
+  const toggleAccordion = (accordionIndex) => {
+    setActiveAccordion((prev) =>
+      prev === accordionIndex ? null : accordionIndex
+    );
   };
+
+  const closeMobileNav = () => {
+    if(activeAccordion === 1){
+      toggleAccordion(1)
+    }
+    setIsMobileNavOpen(false); // Close the mobile nav when a link is clicked
+  };
+
 
   return (
     <>
@@ -30,7 +40,6 @@ export default function Navbar() {
                 width={100}
                 height={80}
                 alt='relaxing-food logo'
-
               />
             </Link>
           </div>
@@ -43,7 +52,7 @@ export default function Navbar() {
             <div className='relative group menu'>
               <div className='flex items-center'>
                 <Link
-                  href='#'
+                  href='/about-us'
                   className='hover:text-yellow-400 flex items-center py-3'
                 >
                   About
@@ -61,13 +70,13 @@ export default function Navbar() {
               {/* Dropdown Menu */}
               <div className='dropdown-menu text-sm'>
                 <Link
-                  href='about-us'
+                  href='/about-us'
                   className='block px-4 py-2 hover:bg-primaryLight rounded-t-md'
                 >
                   About Us
                 </Link>
                 <Link
-                  href='mission'
+                  href='/mission'
                   className='block px-4 py-2 hover:bg-primaryLight border-y'
                 >
                   Mission
@@ -80,52 +89,13 @@ export default function Navbar() {
                 </Link>
               </div>
             </div>
-            <div className='relative group menu text-base'>
-              <div className='flex items-center'>
-                <Link
-                  href='/categories/relaxing-essence'
-                  className='hover:text-yellow-400 flex items-center py-3'
-                >
-                  3D Laminate
-                  <span className='ml-2 transition-transform transform group-hover:rotate-180'>
-                    <Image
-                      src='/images/icons/ArrowDownWhite.svg'
-                      alt='arrow img'
-                      width={13}
-                      height={13}
-                    />
-                  </span>
-                </Link>
-              </div>
 
-              {/* Dropdown Menu */}
-              <div className='dropdown-menu text-sm'>
-                <Link
-                  href='/categories/relaxing-essence/ashwa-poppy-fusion'
-                  className='block px-4 py-2 hover:bg-primaryLight rounded-t-md'
-                >
-                  Shaker
-                </Link>
-                <Link
-                  href='/categories/relaxing-essence/turmeric-bliss'
-                  className='block px-4 py-2 hover:bg-primaryLight border-y'
-                >
-                  Slab
-                </Link>
-                <Link
-                  href='/categories/relaxing-essence/garlic-elan'
-                  className='block px-4 py-2 hover:bg-primaryLight border-y'
-                >
-                  Raised Panel
-                </Link>
-                <Link
-                  href='/categories/relaxing-essence/gingera'
-                  className='block px-4 py-2 hover:bg-primaryLight rounded-b-md'
-                >
-                  3D Colours
-                </Link>
-              </div>
-            </div>
+            <Link href='/products' className='hover:text-yellow-400 py-3'>
+              3D Laminate
+            </Link>
+            <Link href='/projects' className='hover:text-yellow-400 py-3'>
+              Projects
+            </Link>
 
             <Link href='/contact-us' className='hover:text-yellow-400 py-3'>
               Contact Us
@@ -158,6 +128,7 @@ export default function Navbar() {
             <Link
               href='/'
               className='text-base font-medium border-b w-full text-start py-2'
+              onClick={closeMobileNav}
             >
               Home
             </Link>
@@ -188,95 +159,54 @@ export default function Navbar() {
               >
                 <div className='flex flex-col bg-gray-200 text-base'>
                   <Link
-                    href='/categories/relaxing-essence'
+                    href='/about-us'
                     className='block px-4 py-3 hover:bg-gray-300'
+                    onClick={closeMobileNav}
                   >
                     About Us
                   </Link>
                   <Link
-                    href='/categories/relaxing-essence/ashwa-poppy-fusion'
+                    href='/mission'
                     className='block px-4 py-3 hover:bg-gray-300'
+                    onClick={closeMobileNav}
                   >
                     Mission
                   </Link>
                   <Link
-                    href='/categories/relaxing-essence/turmeric-bliss'
+                    href='/team'
                     className='block px-4 py-3 hover:bg-gray-300'
+                    onClick={closeMobileNav}
                   >
                     Team
                   </Link>
                 </div>
               </div>
-
-              {/* 3D Laminate Accordion */}
-              <button
-                onClick={() => toggleAccordion(2)}
-                className='text-base font-medium w-full text-left py-3 border-b flex justify-between items-center'
-              >
-                3D Laminate
-                <Image
-                  src='/images/icons/ArrowDown.svg'
-                  alt='arrow'
-                  width={13}
-                  height={13}
-                  className={`transform transition-transform ${
-                    activeAccordion === 2 ? 'rotate-180' : ''
-                  }`}
-                />
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-500 ${
-                  activeAccordion === 2 ? 'max-h-80' : 'max-h-0'
-                }`}
-                style={{
-                  transitionProperty: 'max-height',
-                }}
-              >
-                <div className='flex flex-col bg-gray-200 text-base'>
-                  <Link
-                    href='/categories/energy-booster'
-                    className='block px-4 py-3 hover:bg-gray-300'
-                  >
-                    Shaker
-                  </Link>
-                  <Link
-                    href='/categories/energy-booster/golden-coconut-treat'
-                    className='block px-4 py-3 hover:bg-gray-300'
-                  >
-                    Slab 
-                  </Link>
-                  <Link
-                    href='/categories/energy-booster/almond-nirvana'
-                    className='block px-4 py-3 hover:bg-gray-300'
-                  >
-                   Raised Panel
-                  </Link>
-                  <Link
-                    href='/categories/energy-booster/walnut-luxe-delight'
-                    className='block px-4 py-3 hover:bg-gray-300'
-                  >
-                    3D Colours
-                  </Link>
-
-                </div>
-              </div>
             </div>
-
             <Link
-              href='/about-us'
+              href='/products'
+              className='text-base font-medium border-b w-full text-start py-2'
+              onClick={closeMobileNav}
+            >
+              3D Laminate
+            </Link>
+            <Link
+              href='/projects'
+              className='text-base font-medium border-b w-full text-start py-2'
+              onClick={closeMobileNav}
+            >
+              Projects
+            </Link>
+            <Link
+              href='/mission'
               className='text-base font-medium border-b w-full text-start py-3'
+              onClick={closeMobileNav}
             >
               Mission
             </Link>
             <Link
-              href='/products'
-              className='text-base font-medium border-b w-full text-start py-3'
-            >
-              Team
-            </Link>
-            <Link
               href='/contact-us'
               className='text-base font-medium border-b w-full text-start py-3'
+              onClick={closeMobileNav}
             >
               Contact Us
             </Link>

@@ -11,7 +11,7 @@ export default function AboutUs() {
             width={600}
             height={600}
             alt='about us img'
-            className='transform transition-transform duration-300 hover:scale-110 h-full lg:w-11/12 xl:w-full mx-auto lg:mx-0'
+            className='transform transition-transform duration-300 hover:scale-110 h-full lg:w-11/12 mx-auto lg:mx-0'
           />
         </div>
       </div>

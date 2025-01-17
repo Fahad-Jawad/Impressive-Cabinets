@@ -15,7 +15,9 @@ export default function Services() {
     <div className='flex p-4 md:p-8 lg:p-12 2xl:p-20 bg-grayBg servicesBg flex-col lg:flex-row'>
       <div className='w-full lg:w-1/3'>
         <div className='flex flex-col gap-4'>
-          <h2 className='text-sm md:text-base xl:text-lg text-bg-white font-bold'>Our Services</h2>
+          <h2 className='text-sm md:text-base xl:text-lg text-bg-white font-bold'>
+            Our Services
+          </h2>
           <h3 className='text-3xl md:text-4xl xl:text-5xl font-bold text-primary'>
             Expertly Designed Cabinets,Tailored to Your Style
           </h3>
@@ -52,7 +54,7 @@ export default function Services() {
             }}
           >
             <SwiperSlide>
-              <div className='bg-gray-100 p-6 rounded-lg shadow-md h-full service group relative overflow-hidden'>
+              <div className='bg-gray-100 p-6 rounded-lg shadow-md h-full service group relative pb-16 pb-16 overflow-hidden'>
                 {/* Background Image */}
                 <Image
                   src={'/images/serviceBg.png'}
@@ -67,7 +69,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className='flex flex-col gap-2 z-20 relative'>
-                  <div className='text-gray-300 text-9xl font-bold serviceNumber group-hover:opacity-20 transition-opacity duration-300'>
+                  <div className='text-primary text-9xl font-bold serviceNumber  group-hover:text-gray-300 group-hover:opacity-20 transition-opacity duration-300'>
                     01
                   </div>
                   <h3 className='text-xl font-semibold text-gray-900 mt-4 group-hover:text-white transition-colors duration-300'>
@@ -78,11 +80,14 @@ export default function Services() {
                     the actual design process with you.
                   </p>
                 </div>
+                <h3 className='absolute bottom-4 left-6 bg-primary text-white text-xs w-max group-hover:bg-white group-hover:text-primary p-2 px-4  rounded-lg '>
+                  Read More
+                </h3>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className='bg-gray-100 p-6 rounded-lg shadow-md h-full service group relative overflow-hidden'>
+              <div className='bg-gray-100 p-6 rounded-lg shadow-md h-full service group relative pb-16 overflow-hidden'>
                 {/* Background Image */}
                 <Image
                   src={'/images/serviceBg.png'}
@@ -97,7 +102,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className='flex flex-col gap-2 z-20 relative'>
-                  <div className='text-gray-300 text-9xl font-bold serviceNumber group-hover:opacity-20 transition-opacity duration-300'>
+                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-gray-300 group-hover:opacity-20 transition-opacity duration-300'>
                     02
                   </div>
                   <h3 className='text-xl font-semibold text-gray-900 mt-4 group-hover:text-white transition-colors duration-300'>
@@ -108,11 +113,14 @@ export default function Services() {
                     fraction of the cost.
                   </p>
                 </div>
+                <h3 className='absolute bottom-4 left-6 bg-primary text-white text-xs w-max group-hover:bg-white group-hover:text-primary p-2 px-4  rounded-lg '>
+                  Read More
+                </h3>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className='bg-gray-100 p-6 rounded-lg shadow-md h-full service group relative overflow-hidden'>
+              <div className='bg-gray-100 p-6 rounded-lg shadow-md h-full service group relative pb-16 overflow-hidden'>
                 {/* Background Image */}
                 <Image
                   src={'/images/serviceBg.png'}
@@ -127,7 +135,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className='flex flex-col gap-2 z-20 relative'>
-                  <div className='text-gray-300 text-9xl font-bold serviceNumber group-hover:opacity-20 transition-opacity duration-300'>
+                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-gray-300 group-hover:opacity-20 transition-opacity duration-300'>
                     03
                   </div>
                   <h3 className='text-xl font-semibold text-gray-900 mt-4 group-hover:text-white transition-colors duration-300'>
@@ -138,11 +146,14 @@ export default function Services() {
                     perfect fit.
                   </p>
                 </div>
+                <h3 className='absolute bottom-4 left-6 bg-primary text-white text-xs w-max group-hover:bg-white group-hover:text-primary p-2 px-4  rounded-lg '>
+                  Read More
+                </h3>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className='bg-gray-100 p-6 rounded-lg shadow-md h-full service group relative overflow-hidden'>
+              <div className='bg-gray-100 p-6 rounded-lg shadow-md h-full service group relative pb-16 overflow-hidden'>
                 {/* Background Image */}
                 <Image
                   src={'/images/serviceBg.png'}
@@ -157,7 +168,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className='flex flex-col gap-2 z-20 relative'>
-                  <div className='text-gray-300 text-9xl font-bold serviceNumber group-hover:opacity-20 transition-opacity duration-300'>
+                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-gray-300 group-hover:opacity-20 transition-opacity duration-300'>
                     04
                   </div>
                   <h3 className='text-xl font-semibold text-gray-900 mt-4 group-hover:text-white transition-colors duration-300'>
@@ -168,11 +179,14 @@ export default function Services() {
                     choices.
                   </p>
                 </div>
+                <h3 className='absolute bottom-4 left-6 bg-primary text-white text-xs w-max group-hover:bg-white group-hover:text-primary p-2 px-4  rounded-lg '>
+                  Read More
+                </h3>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className='bg-gray-100 p-6 rounded-lg shadow-md h-full service group relative overflow-hidden'>
+              <div className='bg-gray-100 p-6 rounded-lg shadow-md h-full service group relative pb-16 overflow-hidden'>
                 {/* Background Image */}
                 <Image
                   src={'/images/serviceBg.png'}
@@ -187,7 +201,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className='flex flex-col gap-2 z-20 relative'>
-                  <div className='text-gray-300 text-9xl font-bold serviceNumber group-hover:opacity-20 transition-opacity duration-300'>
+                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-gray-300 group-hover:opacity-20 transition-opacity duration-300'>
                     05
                   </div>
                   <h3 className='text-xl font-semibold text-gray-900 mt-4 group-hover:text-white transition-colors duration-300'>
@@ -198,11 +212,14 @@ export default function Services() {
                     the actual design process with you.
                   </p>
                 </div>
+                <h3 className='absolute bottom-4 left-6 bg-primary text-white text-xs w-max group-hover:bg-white group-hover:text-primary p-2 px-4  rounded-lg '>
+                  Read More
+                </h3>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className='bg-gray-100 p-6 rounded-lg shadow-md h-full service group relative overflow-hidden'>
+              <div className='bg-gray-100 p-6 rounded-lg shadow-md h-full service group relative pb-16 overflow-hidden'>
                 {/* Background Image */}
                 <Image
                   src={'/images/serviceBg.png'}
@@ -217,7 +234,7 @@ export default function Services() {
 
                 {/* Content */}
                 <div className='flex flex-col gap-2 z-20 relative'>
-                  <div className='text-gray-300 text-9xl font-bold serviceNumber group-hover:opacity-20 transition-opacity duration-300'>
+                  <div className='text-primary text-9xl font-bold serviceNumber group-hover:text-gray-300 group-hover:opacity-20 transition-opacity duration-300'>
                     06
                   </div>
                   <h3 className='text-xl font-semibold text-gray-900 mt-4 group-hover:text-white transition-colors duration-300'>
@@ -228,6 +245,9 @@ export default function Services() {
                     conscious kitchen.
                   </p>
                 </div>
+                <h3 className='absolute bottom-4 left-6 bg-primary text-white text-xs w-max group-hover:bg-white group-hover:text-primary p-2 px-4  rounded-lg '>
+                  Read More
+                </h3>
               </div>
             </SwiperSlide>
           </Swiper>

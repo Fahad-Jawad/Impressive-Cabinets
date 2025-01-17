@@ -70,16 +70,16 @@ export default function Footer() {
         </div>
         <div className='w-full lg:w-1/4 flex flex-col gap-3 items-center lg:items-start'>
           <h2 className='text-xl font-bold uppercase '>Useful Link</h2>
-          <Link href='#' className='underline-animation-white w-max'>
+          <Link href='/about-us' className='underline-animation-white w-max'>
             About Us
           </Link>
-          <Link href='#' className='underline-animation-white w-max'>
+          <Link href='/products' className='underline-animation-white w-max'>
             3D Laminates
           </Link>
-          <Link href='#' className='underline-animation-white w-max'>
+          <Link href='/mission' className='underline-animation-white w-max'>
             Our Mission
           </Link>
-          <Link href='#' className='underline-animation-white w-max'>
+          <Link href='/contact-us' className='underline-animation-white w-max'>
             Contact Us
           </Link>
         </div>

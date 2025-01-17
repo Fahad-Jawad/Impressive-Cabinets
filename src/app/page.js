@@ -7,7 +7,7 @@ import WorkingAreas from "./sections/WorkingAreas";
 import WorkQuality from "./sections/WorkQuality";
 import Testimonials from "./sections/Testimonials";
 import ContactUs from "./sections/ContactUs";
-import Footer from "./sections/Footer";
+import WhyChooseUs from "./sections/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -15,12 +15,12 @@ export default function Home() {
   <Header />
   <AboutUs />
   <Services />
+  <WhyChooseUs />
   <Projects />
   <WorkingAreas />
   <WorkQuality />
   <Testimonials />
   <ContactUs />
-<Footer />
   </>
   );
 }

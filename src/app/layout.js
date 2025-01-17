@@ -1,6 +1,9 @@
 import { Geist, Geist_Mono,Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./sections/Footer";
+import { ModalProvider } from './Contexts/ModalContext';
+import ProductModal from './components/ProductModal';
 
 
 const openSans = Plus_Jakarta_Sans({
@@ -20,8 +23,12 @@ export default function RootLayout({ children }) {
       <body
         className={` ${openSans.variable} antialiased`}
       >
+        <ModalProvider>
         <Navbar />
         {children}
+        <Footer />
+        <ProductModal />
+        </ModalProvider>
       </body>
     </html>
   );
