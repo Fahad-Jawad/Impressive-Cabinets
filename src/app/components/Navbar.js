@@ -20,12 +20,11 @@ export default function Navbar() {
   };
 
   const closeMobileNav = () => {
-    if(activeAccordion === 1){
-      toggleAccordion(1)
+    if (activeAccordion === 1) {
+      toggleAccordion(1);
     }
     setIsMobileNavOpen(false); // Close the mobile nav when a link is clicked
   };
-
 
   return (
     <>
@@ -49,13 +48,13 @@ export default function Navbar() {
             <Link href='/' className=' py-3 underline-animation'>
               Home
             </Link>
+            <Link href='/about-us' className='py-3 underline-animation'>
+              About Us
+            </Link>
             <div className='relative group menu'>
               <div className='flex items-center'>
-                <Link
-                  href='/about-us'
-                  className=' flex items-center py-3 '
-                >
-                  About
+                <Link href='/about-us' className=' flex items-center py-3 '>
+                  Our Services
                   <span className='ml-2 transition-transform transform group-hover:rotate-180'>
                     <Image
                       src='/images/icons/ArrowDownWhite.svg'
@@ -70,22 +69,40 @@ export default function Navbar() {
               {/* Dropdown Menu */}
               <div className='dropdown-menu text-sm'>
                 <Link
-                  href='/about-us'
+                  href='/services/custom-cabinet-design'
                   className='block px-4 py-2 hover:bg-primaryLight rounded-t-md'
                 >
-                  About Us
+                  Custom Cabinet Design
                 </Link>
                 <Link
-                  href='/mission'
+                  href='/services/cabinet-refinishing'
                   className='block px-4 py-2 hover:bg-primaryLight border-y'
                 >
-                  Mission
+                  Cabinet Refinishing
                 </Link>
                 <Link
-                  href='/team'
+                  href='/services/installation-services'
+                  className='block px-4 py-2 hover:bg-primaryLight border-y'
+                >
+                  Installation Services
+                </Link>
+                <Link
+                  href='/services/countertop-integration'
+                  className='block px-4 py-2 hover:bg-primaryLight border-y'
+                >
+                  Countertop Integration
+                </Link>
+                <Link
+                  href='/services/storage-optimization-solutions'
+                  className='block px-4 py-2 hover:bg-primaryLight border-y'
+                >
+                  Storage Optimization Solutions
+                </Link>
+                <Link
+                  href='/services/eco-friendly-cabinets'
                   className='block px-4 py-2 hover:bg-primaryLight rounded-b-md'
                 >
-                  Team
+                  Eco-Friendly Cabinets
                 </Link>
               </div>
             </div>
@@ -132,13 +149,20 @@ export default function Navbar() {
             >
               Home
             </Link>
+            <Link
+              href='/about-us'
+              className='text-base font-medium border-b w-full text-start py-2'
+              onClick={closeMobileNav}
+            >
+              About Us
+            </Link>
             <div className='w-full mobile-menu'>
               {/* About Us Accordion */}
               <button
-                onClick={() => toggleAccordion(1)}
+                onClick={() => toggleAccordion(2)}
                 className='text-base font-medium w-full text-left py-3 border-b flex justify-between items-center'
               >
-                About
+                Our Services
                 <Image
                   src='/images/icons/ArrowDown.svg'
                   alt='arrow'
@@ -151,33 +175,54 @@ export default function Navbar() {
               </button>
               <div
                 className={`overflow-hidden transition-all duration-500 ${
-                  activeAccordion === 1 ? 'max-h-40' : 'max-h-0'
+                  activeAccordion === 2 ? 'max-h-80' : 'max-h-0'
                 }`}
                 style={{
                   transitionProperty: 'max-height',
                 }}
               >
-                <div className='flex flex-col bg-gray-200 text-base'>
+                <div className='flex flex-col bg-primaryExtraLight text-base rounded-lg'>
                   <Link
-                    href='/about-us'
-                    className='block px-4 py-3 hover:bg-gray-300'
+                    href='/services/custom-cabinet-design'
+                    className='block px-4 py-3 '
                     onClick={closeMobileNav}
                   >
-                    About Us
+                    Custom Cabinet Design
                   </Link>
                   <Link
-                    href='/mission'
-                    className='block px-4 py-3 hover:bg-gray-300'
+                    href='/services/cabinet-refinishing'
+                    className='block px-4 py-3 '
                     onClick={closeMobileNav}
                   >
-                    Mission
+                    Cabinet Refinishing
                   </Link>
                   <Link
-                    href='/team'
-                    className='block px-4 py-3 hover:bg-gray-300'
+                    href='/services/installation-services'
+                    className='block px-4 py-3 '
                     onClick={closeMobileNav}
                   >
-                    Team
+                    Installation Services
+                  </Link>
+                  <Link
+                    href='/services/countertop-integration'
+                    className='block px-4 py-3 '
+                    onClick={closeMobileNav}
+                  >
+                    Countertop Integration
+                  </Link>
+                  <Link
+                    href='/services/storage-optimization-solutions'
+                    className='block px-4 py-3 '
+                    onClick={closeMobileNav}
+                  >
+                    Storage Optimization Solutions
+                  </Link>
+                  <Link
+                    href='/services/eco-friendly-cabinets'
+                    className='block px-4 py-3 '
+                    onClick={closeMobileNav}
+                  >
+                    Eco-Friendly Cabinets
                   </Link>
                 </div>
               </div>
