@@ -11,7 +11,7 @@ export default function TopBar() {
             width={20}
             height={20}
           />
-          <p className='text-xs md:text-sm'> relaxingfood@gmail.com</p>
+          <p className='text-xs md:text-sm'>info@impressiveKitchen.com</p>
         </div>
         <div className='flex gap-1 items-center'>
           <Image
@@ -20,7 +20,7 @@ export default function TopBar() {
             width={20}
             height={20}
           />
-          <p className='text-xs md:text-sm'>+954894596456</p>
+          <p className='text-xs md:text-sm'>403-361-4968</p>
         </div>
       </div>
       <div className='w-1/2 hidden md:flex justify-end'>

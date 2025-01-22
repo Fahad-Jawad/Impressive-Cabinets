@@ -28,7 +28,7 @@ export default function ProductModal() {
 
   if (!isModalOpen || !productData) return null;
 
-  const { name } = productData;
+  const { name,category } = productData;
 
   return (
     <div
@@ -68,8 +68,8 @@ export default function ProductModal() {
           <div className='flex flex-col items-center lg:w-1/2'>
             <img
               src={
-                `/images/products/${name}/img${selectedImageIndex}.png` ||
-                `/images/products/${name}/img1.png`
+                `/images/products/${category}/${name}/image${selectedImageIndex}.webp` ||
+                `/images/products/${category}/${name}/image1.webp`
               }
               alt={name}
               className='w-full h-[250px] lg:h-[400px] rounded-lg object-contain mb-4'
@@ -78,7 +78,7 @@ export default function ProductModal() {
               {images.map((index) => (
                 <img
                   key={index}
-                  src={`/images/products/${name}/img${index}.png`}
+                  src={`/images/products/${category}/${name}/image${index}.webp`}
                   alt={`Thumbnail ${index + 1}`}
                   className={`w-1/3 h-20 md:h-28 lg:h-28 rounded-lg object-contain cursor-pointer px-1 lg:px-2 ${
                     selectedImageIndex === index
@@ -98,7 +98,7 @@ export default function ProductModal() {
             {colors.map((index) => (
                 <img
                   key={index}
-                  src={`/images/products/${name}/color${index}.png`}
+                  src={`/images/products/${category}/${name}/colour${index}.webp`}
                   alt={`product color img ${index + 1}`}
                   className={`w-1/2 md:w-1/4 h-20 md:h-28 lg:h-28 rounded-lg object-cover p-1`}
                 />

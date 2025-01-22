@@ -8,7 +8,6 @@ export const ModalProvider = ({ children }) => {
   const [productData, setProductData] = useState(null);
 
   const openModal = (product) => {
-    console.log(product)
     setProductData(product);
     setModalOpen(true);
   };

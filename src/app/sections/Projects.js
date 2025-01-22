@@ -9,12 +9,24 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Image from 'next/image';
 
+const projects = [
+  { img: '/images/projects/Impressive1.1.jpg' },
+  { img: '/images/projects/Impressive2.1.jpg' },
+  { img: '/images/projects/Impressive3.1.jpg' },
+  { img: '/images/projects/Impressive6.1.jpeg' },
+  { img: '/images/projects/Impressive8.1.jpg' },
+];
+
 export default function Projects() {
   return (
     <div className='flex py-4 md:py-8 lg:py-12 2xl:py-20 projects flex-col'>
       <div className='lg:w-max mx-auto text-white text-center flex flex-col gap-3 px-4 md:px-8 lg:px-12 2xl:px-20'>
-        <h2 className='text-sm md:text-base lg:text-lg font-bold text-bg-white mx-auto'>Our Projects</h2>
-        <h3 className='text-3xl md:text-4xl lg:text-5xl font-bold'>Browse Our Kitchen Creations</h3>
+        <h2 className='text-sm md:text-base lg:text-lg font-bold text-bg-white mx-auto'>
+          Our Projects
+        </h2>
+        <h3 className='text-3xl md:text-4xl lg:text-5xl font-bold'>
+          Browse Our Kitchen Creations
+        </h3>
       </div>
 
       <div className='pt-12 md:pt-16 lg:pt-20 px-3 md:px-3 lg:px-6 2xl:px-5'>
@@ -40,122 +52,32 @@ export default function Projects() {
             },
           }}
         >
-          <SwiperSlide>
-            <div className='w-full h-full flex items-center relative group cursor-pointer'>
-              {/* Full-Width and Full-Height Image */}
-              <Image
-                src='/images/modern-cabinets.png'
-                alt='Project Image'
-                width={800}
-                height={800}
-                className='w-full h-full object-cover rounded-lg'
-              />
+          {projects.map((project, index) => (
+            <SwiperSlide>
+              <div className='w-full h-full flex items-center relative group cursor-pointer'>
+                {/* Full-Width and Full-Height Image */}
+                <Image
+                  src={project.img}
+                  alt='Project Image'
+                  width={800}
+                  height={800}
+                  className='w-full h-full object-cover rounded-lg'
+                />
 
-              {/* Sliding Overlay */}
-              <div className='absolute inset-0 bg-black bg-opacity-80 rounded-lg flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500'>
-                <div className='text-center'>
-                  <h2 className='text-white text-4xl font-semibold'>
-                    Kitchen Project 1
-                  </h2>
-                  <p className='text-white text-lg mt-4 capitalize'>bohemian / morden</p>
+                {/* Sliding Overlay */}
+                <div className='absolute inset-0 bg-black bg-opacity-80 rounded-lg flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500'>
+                  <div className='text-center'>
+                    <h2 className='text-white text-4xl font-semibold'>
+                      Kitchen Project {index + 1}
+                    </h2>
+                    <p className='text-white text-lg mt-4 capitalize'>
+                      bohemian / morden
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className='w-full h-full flex items-center relative group cursor-pointer'>
-              {/* Full-Width and Full-Height Image */}
-              <Image
-                src='/images/modern-cabinets2.png'
-                alt='Project Image'
-                width={800}
-                height={800}
-                className='w-full h-full object-cover rounded-lg'
-              />
-
-              {/* Sliding Overlay */}
-              <div className='absolute inset-0 bg-black bg-opacity-80 rounded-lg flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500'>
-                <div className='text-center'>
-                  <h2 className='text-white text-4xl font-semibold'>
-                    Kitchen Project 2
-                  </h2>
-                  <p className='text-white text-lg mt-4 capitalize'>bohemian / morden</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-
-
-          <SwiperSlide>
-            <div className='w-full h-full flex items-center relative group cursor-pointer'>
-              {/* Full-Width and Full-Height Image */}
-              <Image
-                src='/images/modern-cabinets.png'
-                alt='Project Image'
-                width={800}
-                height={800}
-                className='w-full h-full object-cover rounded-lg'
-              />
-
-              {/* Sliding Overlay */}
-              <div className='absolute inset-0 bg-black bg-opacity-80 rounded-lg flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500'>
-                <div className='text-center'>
-                  <h2 className='text-white text-4xl font-semibold'>
-                    Kitchen Project 3
-                  </h2>
-                  <p className='text-white text-lg mt-4 capitalize'>bohemian / morden</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-
-
-          <SwiperSlide>
-            <div className='w-full h-full flex items-center relative group cursor-pointer'>
-              {/* Full-Width and Full-Height Image */}
-              <Image
-                src='/images/modern-cabinets2.png'
-                alt='Project Image'
-                width={800}
-                height={800}
-                className='w-full h-full object-cover rounded-lg'
-              />
-
-              {/* Sliding Overlay */}
-              <div className='absolute inset-0 bg-black bg-opacity-80 rounded-lg flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500'>
-                <div className='text-center'>
-                  <h2 className='text-white text-4xl font-semibold'>
-                    Kitchen Project 4
-                  </h2>
-                  <p className='text-white text-lg mt-4 capitalize'>bohemian / morden</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className='w-full h-full flex items-center relative group cursor-pointer'>
-              {/* Full-Width and Full-Height Image */}
-              <Image
-                src='/images/modern-cabinets.png'
-                alt='Project Image'
-                width={600}
-                height={600}
-                className='w-full h-full object-cover rounded-lg'
-              />
-
-              {/* Sliding Overlay */}
-              <div className='absolute inset-0 bg-black bg-opacity-80 rounded-lg flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500'>
-                <div className='text-center'>
-                  <h2 className='text-white text-4xl font-semibold'>
-                    Kitchen Project 5
-                  </h2>
-                  <p className='text-white text-lg mt-4 capitalize'>bohemian / morden</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

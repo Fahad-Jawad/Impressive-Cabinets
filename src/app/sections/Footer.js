@@ -39,7 +39,7 @@ export default function Footer() {
               height={35}
             />
             <h2 className='text-lg font-bold'>Phone</h2>
-            <p className='text-sm'>(403) 801-111</p>
+            <p className='text-sm'>403-821-1561 </p>
           </div>
         </div>
         <div className='w-full lg:w-1/4 p-4 shadow-xl'>
@@ -98,7 +98,7 @@ export default function Footer() {
               </div>
               <div className='flex flex-col gap-1'>
                 <h3 className='text-base font-bold '>Hotline</h3>
-                <p className='text-xs'>+1 888 988 4317</p>
+                <p className='text-xs'>403-361-4968</p>
               </div>
             </div>
             <div className='flex gap-5 items-center flex-col lg:flex-row text-center lg:text-start'>

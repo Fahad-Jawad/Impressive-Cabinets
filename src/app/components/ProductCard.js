@@ -15,11 +15,11 @@ export default function ProductCard({product}) {
   return (
     <div
       className='flex flex-col gap-4 m-4 mt-0 cursor-pointer'
-      onClick={() => openModal({name:product.name.replace(' ','-')})}
+      onClick={() => openModal(product)}
     >
       <Image
-        src={'/images/shaker.png'}
-        alt='shaker img'
+        src={`/images/products/${product.category}/${product.name}/Image1.webp`}
+        alt={`${product.name} img`}
         width={300}
         height={400}
         className='mx-auto'

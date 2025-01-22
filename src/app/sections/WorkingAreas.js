@@ -11,14 +11,14 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 export default function WorkingAreas() {
   const Cities = [
-    { name: 'Calgary', src: '/images/Calgary.png' },
-    { name: 'Airdrie', src: '/images/Airdrie.png' },
-    { name: 'Cochrane', src: '/images/Cochrane.png' },
-    { name: 'Chesteremere', src: '/images/Chesteremere.png' },
-    { name: 'Calgary', src: '/images/Calgary.png' },
-    { name: 'Airdrie', src: '/images/Airdrie.png' },
-    { name: 'Cochrane', src: '/images/Cochrane.png' },
-    { name: 'Chesteremere', src: '/images/Chesteremere.png' },
+    { name: 'Airdrie', src: '/images/cities/Airdrie.png' },
+    { name: 'Calgary', src: '/images/cities/Calgary.png' },
+    { name: 'Chesteremere', src: '/images/cities/Chesteremere.png' },
+    { name: 'Cochrane', src: '/images/cities/Cochrane.png' },
+    { name: 'Strathmore', src: '/images/cities/Strathmore.jpg' },
+    { name: 'Highriver', src: '/images/cities/highriver.jpg' },
+    { name: 'okotoks', src: '/images/cities/okotoks.jpg' },
+
   ];
   return (
     <div className='p-4 py-8 md:p-8 lg:p-12 2xl:p-20'>
@@ -34,7 +34,7 @@ export default function WorkingAreas() {
         <Swiper
           modules={[Navigation, Pagination, A11y, Autoplay]}
           spaceBetween={20}
-          slidesPerView={2}
+          slidesPerView={1}
           draggable
           loop={true}
           autoplay={{ delay: 3000 }}
@@ -42,7 +42,7 @@ export default function WorkingAreas() {
           breakpoints={{
             // For screens >= 640px (Tablet)
             720: {
-              slidesPerView: 3, // Show 4 slides on tablet
+              slidesPerView: 2, // Show 4 slides on tablet
             },
             // For screens >= 1024px (Laptop and above)
             1024: {
