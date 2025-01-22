@@ -10,10 +10,10 @@ import 'swiper/css/scrollbar';
 import Image from 'next/image';
 
 const projects = [
-  { img: '/images/projects/Impressive1.1.jpg' },
   { img: '/images/projects/Impressive2.1.jpg' },
-  { img: '/images/projects/Impressive3.1.jpg' },
+  { img: '/images/projects/Impressive4.1.jpg' },
   { img: '/images/projects/Impressive6.1.jpeg' },
+  { img: '/images/projects/Impressive7.1.jpeg' },
   { img: '/images/projects/Impressive8.1.jpg' },
 ];
 

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useModal } from '@/app/Contexts/ModalContext';
 import React, { useState, useEffect } from 'react';
 
-export default function ProductCard({product}) {
+export default function ProductCard({ product }) {
   const { openModal } = useModal();
   const [isVisible, setIsVisible] = useState(false);
 
@@ -24,7 +24,9 @@ export default function ProductCard({product}) {
         height={400}
         className='mx-auto'
       />
-      <p className='text-primary font-bold text-xl w-max mx-auto'>{product.name}</p>
+      <p className='text-primary font-bold text-xl w-max mx-auto'>
+        {product.name}
+      </p>
     </div>
   );
 }

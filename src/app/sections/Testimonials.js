@@ -25,31 +25,33 @@ export default function Testimonials() {
           </h3>
         </div>
         <div className='flex justify-end'>
-        <Swiper
-          modules={[Navigation, Pagination, A11y, Autoplay]}
-          spaceBetween={30}
-          slidesPerView={1}
-          draggable
-          autoHeight
-          autoplay={{ delay: 5000 }}
-          loop={true}
-          className='!h-auto mt-5 w-full lg:w-4/5'
-        >
-          <SwiperSlide>
-            <TestimonialCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TestimonialCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TestimonialCard />
-          </SwiperSlide>
-        </Swiper>
+          <Swiper
+            modules={[Navigation, Pagination, A11y, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            draggable
+            autoHeight
+            autoplay={{ delay: 5000 }}
+            loop={true}
+            className='!h-auto mt-5 w-full lg:w-4/5'
+          >
+            <SwiperSlide>
+              <TestimonialCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <TestimonialCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <TestimonialCard />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
       <div className='w-full lg:w-1/2 mt-5 lg:mt-0'>
         <Image
-          src={'/images/modern-cabinets2.png'}
+
+          
+          src={'/images/modern-cabinets2.webp'}
           alt='testimonial side img'
           width={1000}
           height={1000}

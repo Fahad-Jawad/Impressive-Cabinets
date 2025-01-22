@@ -7,7 +7,9 @@ export default function AboutUs() {
       <div className='w-full lg:w-1/2 '>
         <div className='w-full overflow-hidden h-full'>
           <Image
-            src='/images/aboutus-side.png'
+
+            
+            src='/images/aboutus-side.webp'
             width={600}
             height={600}
             alt='about us img'
@@ -17,7 +19,9 @@ export default function AboutUs() {
       </div>
       <div className='w-full lg:w-1/2'>
         <div className='flex flex-col gap-4 py-10'>
-          <h2 className='text-bg-color text-sm md:text-base lg:text-lg font-bold'>About Us</h2>
+          <h2 className='text-bg-color text-sm md:text-base lg:text-lg font-bold'>
+            About Us
+          </h2>
           <h3 className='text-4xl md:text-5xl xl:text-7xl font-bold'>
             Creative Solutions by professional designers
           </h3>

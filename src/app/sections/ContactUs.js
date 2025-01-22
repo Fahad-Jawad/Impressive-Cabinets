@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
 
@@ -73,7 +73,13 @@ export default function ContactUs() {
         }
 
         setSuccessMessage('Form submitted successfully!');
-        setFormData({ firstName: '', lastName: '', email: '', phone: '', message: '' });
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
       } catch (error) {
         alert('Error submitting the form. Please try again later.');
         console.error(error);
@@ -86,7 +92,9 @@ export default function ContactUs() {
     <div className='flex my-20 px-4 md:px-8 lg:px-12 2xl:px-20 gap-10 flex-col lg:flex-row'>
       <div className='w-full lg:w-1/2 serviceSide'>
         <Image
-          src={'/images/contact-side.png'}
+
+          
+          src={'/images/contact-side.webp'}
           alt='contact img'
           width={800}
           height={800}
@@ -95,6 +103,8 @@ export default function ContactUs() {
       </div>
       <div className='w-full lg:w-1/2 flex flex-col gap-4 py-10 relative'>
         <Image
+
+          
           src={'/images/map.png'}
           alt='contact img'
           width={500}
@@ -184,7 +194,9 @@ export default function ContactUs() {
           <button
             type='submit'
             disabled={isSubmitting}
-            className={`w-max p-3 px-4 md:px-6 lg:px-8 text-sm md:text-base lg:text-lg text-white font-bold rounded-lg ${isSubmitting ? 'bg-gray-400' : 'bg-primaryLight'}`}
+            className={`w-max p-3 px-4 md:px-6 lg:px-8 text-sm md:text-base lg:text-lg text-white font-bold rounded-lg ${
+              isSubmitting ? 'bg-gray-400' : 'bg-primaryLight'
+            }`}
           >
             {isSubmitting ? 'Submitting...' : 'Submit'}
           </button>

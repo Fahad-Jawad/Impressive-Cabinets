@@ -18,6 +18,8 @@ export default function WhyChooseUs() {
         <div class='flex flex-col gap-3 items-center text-center border-2 border-gray-100  p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow'>
           <div className='rounded-full p-6 bg-primary'>
             <Image
+
+              
               src={'/images/icons/custom-design.svg'}
               alt='custom design icon'
               width={80}
@@ -39,6 +41,8 @@ export default function WhyChooseUs() {
         <div class='flex flex-col gap-3 items-center text-center border-2 border-gray-100 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow'>
           <div className='rounded-full p-6 bg-primary'>
             <Image
+
+              
               src={'/images/icons/best-service.svg'}
               alt='custom design icon'
               width={80}
@@ -60,6 +64,8 @@ export default function WhyChooseUs() {
         <div class='flex flex-col gap-3 items-center text-center border-2 border-gray-100  p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow'>
           <div className='rounded-full p-6 bg-primary'>
             <Image
+
+              
               src={'/images/icons/team.svg'}
               alt='custom design icon'
               width={80}

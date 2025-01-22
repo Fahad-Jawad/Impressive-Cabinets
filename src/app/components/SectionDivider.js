@@ -5,6 +5,8 @@ export default function SectionDivider() {
   return (
     <div>
       <Image
+
+        
         src={'/images/5.png'}
         width={150}
         height={50}

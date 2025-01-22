@@ -9,7 +9,9 @@ export default function ServiceCard({ name, desc, link }) {
       <div className='flex flex-col gap-2 z-20 relative'>
         <div className='relative'>
           <Image
-            src={`/images/${name}.png`}
+
+            
+            src={`/images/${name}.webp`}
             alt='service 1 img'
             width={400}
             height={300}
@@ -17,6 +19,8 @@ export default function ServiceCard({ name, desc, link }) {
           />
 
           <Image
+
+            
             src={`/images/icons/${name}.svg`}
             alt={`${name}-icon`}
             width={55}
@@ -25,13 +29,13 @@ export default function ServiceCard({ name, desc, link }) {
           />
         </div>
         <div className='flex flex-col gap-2 z-20 relative p-3 py-6'>
-          <h3 className='text-2xl font-bold text-gray-900'>{name}</h3>
+          <h3 className='text-2xl font-bold text-gray-900 capitalize'>{name}</h3>
           <p className='text-gray-600'>{desc}</p>
         </div>
       </div>
       <Link href={`/services/${link}`} className='w-max'>
         <h3 className='absolute bottom-4 left-3 bg-primary text-white text-xs w-max p-2 px-4  rounded-lg '>
-          Read More 
+          Read More
         </h3>
       </Link>
     </div>

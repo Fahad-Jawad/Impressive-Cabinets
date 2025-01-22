@@ -16,42 +16,42 @@ export default function Services() {
       <div className='w-full mt-10 flex flex-wrap'>
         <div className='w-full md:w-1/2 lg:w-1/3 p-3'>
           <ServiceCard
-            name='Custom Cabinet Design'
+            name='custom cabinet design'
             link='custom-cabinet-design'
             desc='Tailored solutions to match your unique style and kitchen layout.'
           />
         </div>
         <div className='w-full md:w-1/2 lg:w-1/3 p-3'>
           <ServiceCard
-            name='Cabinet Refinishing'
+            name='cabinet refinishing'
             link='cabinet-refinishing'
             desc='Transform your old cabinets with a fresh, new look at a fraction of the cost.'
           />
         </div>
         <div className='w-full md:w-1/2 lg:w-1/3 p-3'>
           <ServiceCard
-            name='Installation Services'
+            name='installation services'
             link='installation-services'
             desc='Professional and hassle-free cabinet installation for a perfect fit.'
           />
         </div>
         <div className='w-full md:w-1/2 lg:w-1/3 p-3'>
           <ServiceCard
-            name='Countertop Integration'
+            name='countertop integration'
             link='countertop-integration'
             desc='Seamlessly designed countertops to complement your cabinet choices.'
           />
         </div>
         <div className='w-full md:w-1/2 lg:w-1/3 p-3'>
           <ServiceCard
-            name='Storage Optimization Solutions'
+            name='storage optimization solutions'
             link='storage-optimization-solutions'
             desc='Smart designs to maximize space and keep your kitchen organized.'
           />
         </div>
         <div className='w-full md:w-1/2 lg:w-1/3 p-3'>
           <ServiceCard
-            name='Eco Friendly Cabinets'
+            name='eco friendly cabinets'
             link='eco-friendly-cabinets'
             desc='Sustainable materials and finishes for an environmentally conscious kitchen.'
           />
