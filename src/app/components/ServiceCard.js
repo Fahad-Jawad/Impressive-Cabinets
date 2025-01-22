@@ -31,7 +31,7 @@ export default function ServiceCard({ name, desc, link }) {
       </div>
       <Link href={`/services/${link}`} className='w-max'>
         <h3 className='absolute bottom-4 left-3 bg-primary text-white text-xs w-max p-2 px-4  rounded-lg '>
-          Read More
+          Read More 
         </h3>
       </Link>
     </div>

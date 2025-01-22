@@ -1,14 +1,6 @@
 'use client';
 
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/autoplay';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 import ServiceCard from '../components/ServiceCard';
 export default function Services() {
   return (
