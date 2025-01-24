@@ -169,7 +169,7 @@ export default function Navbar() {
                   width={13}
                   height={13}
                   className={`transform transition-transform ${
-                    activeAccordion === 1 ? 'rotate-180' : ''
+                    activeAccordion === 2 ? 'rotate-180' : ''
                   }`}
                 />
               </button>
