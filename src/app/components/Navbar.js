@@ -119,6 +119,12 @@ export default function Navbar() {
             </Link>
           </div>
 
+          <Link href='/contact-us' className='hidden xl:flex'>
+            <button className='p-3 rounded-lg border border-primary hover:bg-primary hover:text-white duration-300 ease-in-out text-primary capitalize font-bold'>
+              Get Quote
+            </button>
+          </Link>
+
           {/* Mobile Toggle Button */}
           <div className='lg:hidden'>
             <button onClick={toggleMobileNav}>
@@ -247,6 +253,12 @@ export default function Navbar() {
               onClick={closeMobileNav}
             >
               Contact Us
+            </Link>
+
+            <Link href='/contact-us' className='w-full flex justify-center' onClick={closeMobileNav}>
+              <button className='p-3 w-2/3 my-5 mx-auto text-lg rounded-lg bg-primary text-white capitalize font-bold'>
+                Get Quote
+              </button>
             </Link>
           </div>
 
