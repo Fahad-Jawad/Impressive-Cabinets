@@ -9,8 +9,6 @@ export default function Footer() {
         <div className='w-full lg:w-1/4 p-4 shadow-xl'>
           <div className='flex flex-col gap-3 text-white items-center w-full'>
             <Image
-
-              
               src={'/images/icons/ClockWhite.svg'}
               alt='clock'
               width={35}
@@ -23,8 +21,6 @@ export default function Footer() {
         <div className='w-full lg:w-1/4 p-4 shadow-xl'>
           <div className='flex flex-col gap-3 text-white items-center w-full'>
             <Image
-
-              
               src={'/images/icons/Location.svg'}
               alt='clock'
               width={35}
@@ -37,8 +33,6 @@ export default function Footer() {
         <div className='w-full lg:w-1/4 p-4 shadow-xl'>
           <div className='flex flex-col gap-3 text-white items-center w-full'>
             <Image
-
-              
               src={'/images/icons/MobileWhite.svg'}
               alt='clock'
               width={35}
@@ -51,8 +45,6 @@ export default function Footer() {
         <div className='w-full lg:w-1/4 p-4 shadow-xl'>
           <div className='flex flex-col gap-3 text-white items-center w-full'>
             <Image
-
-              
               src={'/images/icons/MailWhite.svg'}
               alt='clock'
               width={35}
@@ -68,10 +60,8 @@ export default function Footer() {
         <div className='w-full lg:w-1/4 flex flex-col gap-5 items-center lg:items-start'>
           <div className='flex justify-center w-3/4'>
             <Image
-
-              
               src={'/images/logoWhite.jpg'}
-              alt='modern-lighting logo'
+              alt='Impressive Kitchen Cabinets logo'
               width={160}
               height={150}
               className='rounded-xl'
@@ -100,8 +90,6 @@ export default function Footer() {
             <div className='flex gap-5 items-center flex-col lg:flex-row text-center lg:text-start'>
               <div className='bg-white rounded-full p-2'>
                 <Image
-
-                  
                   src={'/images/icons/PhoneBlack.svg'}
                   alt='modern design'
                   width={20}
@@ -116,8 +104,6 @@ export default function Footer() {
             <div className='flex gap-5 items-center flex-col lg:flex-row text-center lg:text-start'>
               <div className='bg-white rounded-full p-2'>
                 <Image
-
-                  
                   src={'/images/icons/MailBlack.svg'}
                   alt='modern design'
                   width={21}
@@ -133,8 +119,6 @@ export default function Footer() {
             <div className='flex gap-5 items-center flex-col lg:flex-row text-center lg:text-start'>
               <div className='bg-white rounded-full p-2'>
                 <Image
-
-                  
                   src={'/images/icons/LocationBlack.svg'}
                   alt='modern design'
                   width={26}
@@ -153,8 +137,6 @@ export default function Footer() {
           <div className='flex gap-3'>
             <Link href='#' className='w-max'>
               <Image
-
-                
                 src={'/images/icons/FacebookWhite.svg'}
                 alt='facebook'
                 width={40}
@@ -163,8 +145,6 @@ export default function Footer() {
             </Link>
             <Link href='#' className='w-max'>
               <Image
-
-                
                 src={'/images/icons/InstaWhite.svg'}
                 alt='facebook'
                 width={40}
@@ -174,8 +154,6 @@ export default function Footer() {
 
             <Link href='#' className='w-max'>
               <Image
-
-                
                 src={'/images/icons/Xwhite.svg'}
                 alt='facebook'
                 width={40}

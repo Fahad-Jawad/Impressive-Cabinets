@@ -40,7 +40,7 @@ export default function Navbar() {
                 src={'/images/logo.svg'}
                 width={100}
                 height={80}
-                alt='relaxing-food logo'
+                alt='Impressive Kitchen Cabinets logo'
               />
             </Link>
           </div>
