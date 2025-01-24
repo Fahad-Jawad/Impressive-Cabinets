@@ -35,8 +35,6 @@ export default function Navbar() {
           <div className='text-base font-bold'>
             <Link href='/'>
               <Image
-
-                
                 src={'/images/logo.svg'}
                 width={100}
                 height={80}
@@ -59,8 +57,6 @@ export default function Navbar() {
                   Our Services
                   <span className='ml-2 transition-transform transform group-hover:rotate-180'>
                     <Image
-
-                      
                       src='/images/icons/ArrowDownWhite.svg'
                       alt='arrow img'
                       width={13}
@@ -168,8 +164,6 @@ export default function Navbar() {
               >
                 Our Services
                 <Image
-
-                  
                   src='/images/icons/ArrowDown.svg'
                   alt='arrow'
                   width={13}

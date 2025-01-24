@@ -14,7 +14,7 @@ import 'swiper/css/scrollbar';
 import TestimonialCard from '../components/TestimonialCard';
 export default function Testimonials() {
   return (
-    <div className='flex my-20 p-4 lg:p-10 testimonials relative flex-col lg:flex-row'>
+    <div className='flex my-20 p-4 lg:p-10 testimonials relative flex-col-reverse lg:flex-row'>
       <div className='w-full lg:w-1/2 lg:p-5 xl:p-10 '>
         <div className='flex flex-col gap-3'>
           <h2 className='text-sm md:text-base lg:text-lg text-bg-white font-bold'>
