@@ -29,7 +29,6 @@ export default function Page() {
     return <Loader />;
   }
 
-  console.log(serviceData);
 
   return (
     <div>
@@ -50,12 +49,24 @@ export default function Page() {
           <h2 className='text-bg-color text-sm md:text-base lg:text-xl font-bold'>
             Service
           </h2>
-          <h1 className='text-4xl text-primary font-bold my-5 uppercase'>
+          <h3 className='text-4xl text-primary font-bold my-5 uppercase'>
             {formattedServiceName}
-          </h1>
-          <p className='text-lg leading-relaxed text-gray-600'>
+          </h3>
+          <p className='text-base leading-relaxed text-gray-600'>
             {serviceData?.desc}
           </p>
+          <div className='flex flex-col gap-3 mt-3'>
+            <h4 className='text-2xl font-bold'>{serviceData?.smallHeading}</h4>
+            {serviceData?.attributes?.length > 0 && (
+              <ul className='list-disc pl-5'>
+                {serviceData.attributes.map((attribute, index) => (
+                  <li key={index} className='text-sm text-gray-700 mb-2'>
+                    {attribute}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
         </div>
       </div>
     </div>

@@ -21,8 +21,14 @@ export default function ContactUs() {
   };
 
   const validatePhone = (phone) => {
-    const regex = /^\+?\d{10,15}$/; // Allows optional + and 10-15 digits
+    const regex = /^\+?\d{10,15}$/;
     return regex.test(phone);
+  };
+
+  // Regex to detect potential malicious code
+  const isMaliciousInput = (input) => {
+    const maliciousPattern = /<script.*?>.*?<\/script>|<.*?on\w+=".*?".*?>|javascript:|<.*?<\/.*?>/gi;
+    return maliciousPattern.test(input);
   };
 
   const handleInputChange = (e) => {
@@ -39,22 +45,33 @@ export default function ContactUs() {
     setSuccessMessage('');
     const { firstName, lastName, email, phone, message } = formData;
 
-    // Validation checks
     let formErrors = {};
 
+    // Validation checks for malicious input and required fields
     if (!firstName.trim()) formErrors.firstName = 'First name is required.';
+    if (isMaliciousInput(firstName)) formErrors.firstName = 'First name contains malicious content.';
+    
     if (!lastName.trim()) formErrors.lastName = 'Last name is required.';
+    if (isMaliciousInput(lastName)) formErrors.lastName = 'Last name contains malicious content.';
+    
     if (!email.trim()) {
       formErrors.email = 'Email is required.';
     } else if (!validateEmail(email)) {
       formErrors.email = 'Invalid email format.';
+    } else if (isMaliciousInput(email)) {
+      formErrors.email = 'Email contains malicious content.';
     }
+    
     if (!phone.trim()) {
       formErrors.phone = 'Phone number is required.';
     } else if (!validatePhone(phone)) {
       formErrors.phone = 'Invalid phone number. Must be 10-15 digits.';
+    } else if (isMaliciousInput(phone)) {
+      formErrors.phone = 'Phone number contains malicious content.';
     }
+    
     if (!message.trim()) formErrors.message = 'Message is required.';
+    if (isMaliciousInput(message)) formErrors.message = 'Your message contains potentially harmful content.';
 
     setErrors(formErrors);
 
@@ -89,11 +106,9 @@ export default function ContactUs() {
   };
 
   return (
-    <div className='flex my-20 px-4 md:px-8 lg:px-12 2xl:px-20 gap-10 flex-col lg:flex-row'>
+    <div className='flex my-20 px-4 md:px-8 lg:px-12 2xl:px-20 gap-10 flex-col lg:flex-row' id='contact'>
       <div className='w-full lg:w-1/2 serviceSide'>
         <Image
-
-          
           src={'/images/contact-side.webp'}
           alt='contact img'
           width={800}
@@ -103,8 +118,6 @@ export default function ContactUs() {
       </div>
       <div className='w-full lg:w-1/2 flex flex-col gap-4 py-10 relative'>
         <Image
-
-          
           src={'/images/map.png'}
           alt='contact img'
           width={500}
@@ -194,9 +207,7 @@ export default function ContactUs() {
           <button
             type='submit'
             disabled={isSubmitting}
-            className={`w-max p-3 px-4 md:px-6 lg:px-8 text-sm md:text-base lg:text-lg text-white font-bold rounded-lg ${
-              isSubmitting ? 'bg-gray-400' : 'bg-primaryLight'
-            }`}
+            className={`w-max p-3 px-4 md:px-6 lg:px-8 text-sm md:text-base lg:text-lg text-white font-bold rounded-lg ${isSubmitting ? 'bg-gray-400' : 'bg-primaryLight'}`}
           >
             {isSubmitting ? 'Submitting...' : 'Submit'}
           </button>

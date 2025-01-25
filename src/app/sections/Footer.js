@@ -76,8 +76,9 @@ export default function Footer() {
           <Link href='/products' className='underline-animation-white w-max'>
             3D Laminates
           </Link>
-          <Link href='/mission' className='underline-animation-white w-max'>
-            Our Mission
+
+          <Link href='/projects' className='underline-animation-white w-max'>
+            Our Projects
           </Link>
           <Link href='/contact-us' className='underline-animation-white w-max'>
             Contact Us

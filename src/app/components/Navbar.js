@@ -53,7 +53,7 @@ export default function Navbar() {
             </Link>
             <div className='relative group menu'>
               <div className='flex items-center'>
-                <Link href='/about-us' className=' flex items-center py-3 '>
+                <Link href='#' className=' flex items-center py-3 '>
                   Our Services
                   <span className='ml-2 transition-transform transform group-hover:rotate-180'>
                     <Image
@@ -69,40 +69,40 @@ export default function Navbar() {
               {/* Dropdown Menu */}
               <div className='dropdown-menu text-sm'>
                 <Link
-                  href='/services/custom-cabinet-design'
+                  href='/services/custom-cabinet-modifications'
                   className='block px-4 py-2 hover:bg-primaryLight rounded-t-md'
                 >
-                  Custom Cabinet Design
+                  Custom Cabinet Modifications
                 </Link>
                 <Link
-                  href='/services/cabinet-refinishing'
+                  href='/services/modern-cabinet-door-upgrades'
                   className='block px-4 py-2 hover:bg-primaryLight border-y'
                 >
-                  Cabinet Refinishing
+                  Modern Cabinet Door Upgrades
                 </Link>
                 <Link
-                  href='/services/installation-services'
+                  href='/services/professional-cabinet-refinishing'
                   className='block px-4 py-2 hover:bg-primaryLight border-y'
                 >
-                  Installation Services
+                  Professional Cabinet Refinishing
                 </Link>
                 <Link
-                  href='/services/countertop-integration'
+                  href='/services/new-kitchen-design-&-installation'
                   className='block px-4 py-2 hover:bg-primaryLight border-y'
                 >
-                  Countertop Integration
+                  New Kitchen Design & Installation
                 </Link>
                 <Link
-                  href='/services/storage-optimization-solutions'
+                  href='/services/elegant-countertops-&-storage-solutions'
                   className='block px-4 py-2 hover:bg-primaryLight border-y'
                 >
-                  Storage Optimization Solutions
+                  Elegant Countertops & Storage Solutions
                 </Link>
                 <Link
-                  href='/services/eco-friendly-cabinets'
+                  href='/services/bathroom-renovations'
                   className='block px-4 py-2 hover:bg-primaryLight rounded-b-md'
                 >
-                  Eco-Friendly Cabinets
+                  Bathroom Renovations
                 </Link>
               </div>
             </div>
@@ -117,13 +117,12 @@ export default function Navbar() {
             <Link href='/contact-us' className=' py-3 underline-animation'>
               Contact Us
             </Link>
+            <Link href='/contact-us' className='hidden xl:flex'>
+              <button className='p-3 rounded-lg border border-primary hover:bg-primary hover:text-white duration-300 ease-in-out text-primary capitalize font-bold'>
+                Get Quote
+              </button>
+            </Link>
           </div>
-
-          <Link href='/contact-us' className='hidden xl:flex'>
-            <button className='p-3 rounded-lg border border-primary hover:bg-primary hover:text-white duration-300 ease-in-out text-primary capitalize font-bold'>
-              Get Quote
-            </button>
-          </Link>
 
           {/* Mobile Toggle Button */}
           <div className='lg:hidden'>
@@ -163,9 +162,9 @@ export default function Navbar() {
               About Us
             </Link>
             <div className='w-full mobile-menu'>
-              {/* About Us Accordion */}
+              {/* Our Services Accordion */}
               <button
-                onClick={() => toggleAccordion(2)}
+                onClick={() => toggleAccordion(1)}
                 className='text-base font-medium w-full text-left py-3 border-b flex justify-between items-center'
               >
                 Our Services
@@ -180,8 +179,8 @@ export default function Navbar() {
                 />
               </button>
               <div
-                className={`overflow-hidden transition-all duration-500 ${
-                  activeAccordion === 2 ? 'max-h-80' : 'max-h-0'
+                className={`overflow-hidden transition-all duration-500 my-1 ${
+                  activeAccordion === 1 ? 'max-h-80' : 'max-h-0'
                 }`}
                 style={{
                   transitionProperty: 'max-height',
@@ -189,50 +188,51 @@ export default function Navbar() {
               >
                 <div className='flex flex-col bg-primaryExtraLight text-base rounded-lg'>
                   <Link
-                    href='/services/custom-cabinet-design'
-                    className='block px-4 py-3 '
+                    href='/services/custom-cabinet-modifications'
+                    className='block px-4 py-3'
                     onClick={closeMobileNav}
                   >
-                    Custom Cabinet Design
+                    Custom Cabinet Modifications
                   </Link>
                   <Link
-                    href='/services/cabinet-refinishing'
-                    className='block px-4 py-3 '
+                    href='/services/modern-cabinet-door-upgrades'
+                    className='block px-4 py-3'
                     onClick={closeMobileNav}
                   >
-                    Cabinet Refinishing
+                    Modern Cabinet Door Upgrades
                   </Link>
                   <Link
-                    href='/services/installation-services'
-                    className='block px-4 py-3 '
+                    href='/services/professional-cabinet-refinishing'
+                    className='block px-4 py-3'
                     onClick={closeMobileNav}
                   >
-                    Installation Services
+                    Professional Cabinet Refinishing
                   </Link>
                   <Link
-                    href='/services/countertop-integration'
-                    className='block px-4 py-3 '
+                    href='/services/new-kitchen-design-&-installation'
+                    className='block px-4 py-3'
                     onClick={closeMobileNav}
                   >
-                    Countertop Integration
+                    New Kitchen Design & Installation
                   </Link>
                   <Link
-                    href='/services/storage-optimization-solutions'
-                    className='block px-4 py-3 '
+                    href='/services/elegant-countertops-&-storage-solutions'
+                    className='block px-4 py-3'
                     onClick={closeMobileNav}
                   >
-                    Storage Optimization Solutions
+                    Elegant Countertops & Storage Solutions
                   </Link>
                   <Link
-                    href='/services/eco-friendly-cabinets'
-                    className='block px-4 py-3 '
+                    href='/services/bathroom-renovations'
+                    className='block px-4 py-3'
                     onClick={closeMobileNav}
                   >
-                    Eco-Friendly Cabinets
+                    Bathroom Renovations
                   </Link>
                 </div>
               </div>
             </div>
+
             <Link
               href='/products'
               className='text-base font-medium border-b w-full text-start py-2'
@@ -255,7 +255,11 @@ export default function Navbar() {
               Contact Us
             </Link>
 
-            <Link href='/contact-us' className='w-full flex justify-center' onClick={closeMobileNav}>
+            <Link
+              href='/contact-us'
+              className='w-full flex justify-center'
+              onClick={closeMobileNav}
+            >
               <button className='p-3 w-2/3 my-5 mx-auto text-lg rounded-lg bg-primary text-white capitalize font-bold'>
                 Get Quote
               </button>

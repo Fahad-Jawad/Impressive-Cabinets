@@ -6,7 +6,7 @@ export default function page() {
   return (
     <div>
         <Breadcrumb name={'About Us'} />
-        <AboutUs />
+        <AboutUs page='about-us' />
     </div>
   )
 }

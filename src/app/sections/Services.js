@@ -16,44 +16,44 @@ export default function Services() {
       <div className='w-full mt-10 flex flex-wrap'>
         <div className='w-full md:w-1/2 lg:w-1/3 p-3'>
           <ServiceCard
-            name='custom cabinet design'
-            link='custom-cabinet-design'
-            desc='Tailored solutions to match your unique style and kitchen layout.'
+            name='custom cabinet modifications'
+            link='custom-cabinet-modifications'
+            desc='Enhance functionality and style with custom pantries, roll-out trays, and cabinet extensions.'
           />
         </div>
         <div className='w-full md:w-1/2 lg:w-1/3 p-3'>
           <ServiceCard
-            name='cabinet refinishing'
-            link='cabinet-refinishing'
-            desc='Transform your old cabinets with a fresh, new look at a fraction of the cost.'
+            name='professional cabinet refinishing'
+            link='professional-cabinet-refinishing'
+            desc='Revitalize cabinets with vibrant colors and durable finishes for a fresh look.'
           />
         </div>
         <div className='w-full md:w-1/2 lg:w-1/3 p-3'>
           <ServiceCard
-            name='installation services'
-            link='installation-services'
-            desc='Professional and hassle-free cabinet installation for a perfect fit.'
+            name='new kitchen design & installation'
+            link='new-kitchen-design-&-installation'
+            desc='Bring your vision to life with tailored designs and expert installations.'
           />
         </div>
         <div className='w-full md:w-1/2 lg:w-1/3 p-3'>
           <ServiceCard
-            name='countertop integration'
-            link='countertop-integration'
-            desc='Seamlessly designed countertops to complement your cabinet choices.'
+            name='elegant countertops & storage solutions'
+            link='elegant-countertops-&-storage-solutions'
+            desc='Add durable laminate countertops and smart storage upgrades like soft-close drawers.'
           />
         </div>
         <div className='w-full md:w-1/2 lg:w-1/3 p-3'>
           <ServiceCard
-            name='storage optimization solutions'
-            link='storage-optimization-solutions'
-            desc='Smart designs to maximize space and keep your kitchen organized.'
+            name='modern cabinet door upgrades'
+            link='modern-cabinet-door-upgrades'
+            desc='Upgrade outdated doors with sleek thermofoil or timeless wood designs.'
           />
         </div>
         <div className='w-full md:w-1/2 lg:w-1/3 p-3'>
           <ServiceCard
-            name='eco friendly cabinets'
-            link='eco-friendly-cabinets'
-            desc='Sustainable materials and finishes for an environmentally conscious kitchen.'
+            name='bathroom renovations'
+            link='bathroom-renovations'
+            desc='Transform bathrooms with modern vanities, stylish fixtures, and innovative designs.'
           />
         </div>
       </div>

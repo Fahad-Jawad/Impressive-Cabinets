@@ -1,21 +1,68 @@
 export const services = {
-    "custom cabinet design": {
-      desc: "We specialize in creating custom cabinet designs tailored to your specific requirements and personal taste. Our team works closely with you to understand your needs and aspirations, ensuring every detail is thoughtfully considered. From innovative storage solutions to elegant finishes, we craft designs that not only enhance the aesthetics of your kitchen but also improve functionality. Whether you prefer a modern look or a classic appeal, our designs are adaptable to suit any style. We use high-quality materials to ensure durability and timeless beauty. Let us bring your vision to life with cabinets that are as unique as your home."
-    },
-    "cabinet refinishing": {
-      desc: "Breathe new life into your kitchen with our professional cabinet refinishing services. Say goodbye to outdated finishes and hello to a refreshed, modern appearance without the need for a full replacement. Our refinishing process involves meticulous preparation, including sanding and priming, followed by applying premium coatings for a flawless finish. We offer a wide variety of color and texture options to match your decor. Refinishing is a cost-effective and environmentally friendly way to upgrade your cabinets while preserving their structural integrity. Enjoy the charm of a brand-new look at a fraction of the cost."
-    },
-    "installation services": {
-      desc: "Achieve a seamless kitchen transformation with our expert cabinet installation services. Our experienced installers ensure every cabinet is securely and accurately fitted, leaving no room for imperfections. We handle everything from minor adjustments to complex layouts, providing a hassle-free experience from start to finish. With a focus on precision and efficiency, we take the stress out of renovations. Our team works quickly without compromising quality, ensuring that your new cabinets perfectly complement your space. Trust us for an installation that’s as professional as it is beautiful."
-    },
-    "countertop integration": {
-      desc: "Enhance your kitchen’s functionality and appearance with our countertop integration services. We help you select the perfect countertops that complement your cabinets and overall design. From sleek quartz to timeless granite, we offer a wide range of materials to suit your style and budget. Our skilled craftsmen ensure precise measurements and flawless installation, creating a cohesive look that adds value to your home. With durability and aesthetics in mind, our countertops are designed to stand the test of time while providing a stunning focal point for your kitchen."
-    },
-    "storage optimization solutions": {
-      desc: "Maximize every inch of your kitchen space with our innovative storage optimization solutions. We design and implement smart storage systems that make organization effortless. From pull-out drawers to custom shelving, we create features tailored to your needs. Our solutions focus on functionality, ensuring everything from pots and pans to spices and utensils has a designated place. Enjoy a clutter-free kitchen that’s easy to navigate and keeps everything within reach. Let us help you turn your kitchen into a highly efficient and organized workspace."
-    },
-    "eco friendly cabinets": {
-      desc: "Make an environmentally conscious choice with our eco-friendly cabinet options. We use sustainable materials and non-toxic finishes to reduce your home’s carbon footprint while maintaining high quality and style. Our eco-friendly cabinets are not only better for the planet but also safe for your family, offering healthier indoor air quality. With designs ranging from rustic to contemporary, you don’t have to compromise on aesthetics. By choosing green cabinetry, you contribute to a sustainable future while enjoying durable and beautiful kitchen solutions."
-    }
-  };
-  
+  'custom cabinet modifications': {
+    smallHeading: 'What We Offer',
+    attributes: [
+      'Custom-built pantries and islands to maximize storage and style.',
+      'Roll-out trays for easier access to hard-to-reach spaces.',
+      'Upper cabinet extensions to make use of vertical space.',
+      'Soft-close drawers and hinges for a smoother, quieter experience.',
+      'Unique features like crown molding, wine racks, and light rails.',
+      'Glass inserts for an elegant, modern look.',
+    ],
+    desc: 'Enhance your kitchen with custom cabinet modifications designed to maximize storage, usability, and style. Whether you need roll-out trays for easy access, soft-close drawers for quiet functionality, or extended upper cabinets, our tailored solutions ensure your kitchen looks beautiful while meeting all your practical needs.',
+  },
+  'modern cabinet door upgrades': {
+    smallHeading: 'Options We Provide',
+    attributes: [
+      'Raised panel doors for a timeless, elegant look.',
+      'Flat panel doors for a sleek and minimalist design.',
+      'Shaker doors that blend traditional and contemporary styles.',
+      'MDF and Thermofoil options for durable, budget-friendly solutions.',
+      'Professional installation for a hassle-free experience.',
+    ],
+    desc: 'Elevate your kitchen’s appearance with our modern cabinet door upgrades. From timeless shaker styles to sleek flat panels, we offer a wide range of options to match your aesthetic preferences. Our doors are crafted from durable MDF or thermofoil materials, ensuring a long-lasting, affordable solution. Trust our professional installation for a seamless transformation.',
+  },
+  'professional cabinet refinishing': {
+    smallHeading: 'Key Benefits',
+    attributes: [
+      'High-quality painting of cabinet doors and boxes for a fresh, modern look.',
+      'Use of existing doors and drawer fronts to reduce waste and costs.',
+      'Durable finishes in a variety of colors and styles to suit your taste.',
+      'Quick and clean process to minimize disruption in your home.',
+    ],
+    desc: 'Breathe new life into your kitchen with our professional cabinet refinishing services. Instead of replacing your cabinets, we use durable paints and finishes to revitalize their look while reducing waste and costs. With a wide variety of colors and finishes available, our fast and clean process minimizes disruption and delivers stunning results.',
+  },
+  'new kitchen design & installation': {
+    smallHeading: 'Our Services Include',
+    attributes: [
+      'Custom kitchen designs tailored to your preferences.',
+      'Professional installation of cabinets, vanities, and islands.',
+      'Modern features like roll-out trays and soft-close hardware.',
+      'Expert guidance on materials, finishes, and layout optimization.',
+      'Durable craftsmanship designed to stand the test of time.',
+    ],
+    desc: 'Transform your home with our new kitchen design and installation services. We create custom designs tailored to your style and functionality needs, handling everything from cabinetry to modern soft-close hardware. With features like roll-out trays and lighting upgrades, we ensure a smooth and stress-free upgrade that leaves you with a kitchen you’ll love for years to come.',
+  },
+  'elegant countertops & storage solutions': {
+    smallHeading: 'We Offer',
+    attributes: [
+      'High-quality laminate countertops for a stylish and durable finish.',
+      'Soft-close drawer slides and hinges for a modern touch.',
+      'Crown molding, light rails, and wine racks for added sophistication.',
+      'Roll-out trays for easy access to your cabinet contents.',
+      'Custom pan drawers, replacement drawers, and pantry storage upgrades.',
+    ],
+    desc: 'Upgrade your kitchen with elegant countertops and smart storage solutions. Our high-quality laminate countertops combine durability and style, offering a stunning focal point for your space. From crown molding to custom pan drawers and soft-close hardware, we provide thoughtful upgrades that perfectly balance form and functionality.',
+  },
+  'bathroom renovations': {
+    smallHeading: 'Our Renovation Services Include',
+    attributes: [
+      'Custom-built vanities for added storage and style.',
+      'Upgrading bathroom fixtures for a modern and sleek appearance.',
+      'Professional installation of durable and elegant finishes.',
+      'Innovative storage solutions for better organization.',
+      'Tailored designs to match your vision and enhance functionality.',
+    ],
+    desc: 'Modernize your bathroom with our comprehensive renovation services. We specialize in crafting custom-built vanities for enhanced storage and installing sleek fixtures that elevate your space. With durable finishes and innovative storage solutions tailored to your style, we help you create a bathroom that’s both functional and beautiful.',
+  },
+};
