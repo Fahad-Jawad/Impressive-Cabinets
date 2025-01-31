@@ -6,8 +6,6 @@ export default function TopBar() {
       <div className='w-full lg:w-1/2 flex justify-between md:justify-start md:gap-5 items-center'>
         <div className='flex gap-1 items-center'>
           <Image
-
-            
             src={'/images/icons/Send.svg'}
             alt='relaxing-Food-email'
             width={20}
@@ -17,14 +15,14 @@ export default function TopBar() {
         </div>
         <div className='flex gap-1 items-center'>
           <Image
-
-            
             src={'/images/icons/Phone.svg'}
             alt='relaxing-Food-phone'
             width={20}
             height={20}
           />
           <p className='text-xs md:text-sm'>403-361-4968</p>
+          -
+          <p className='text-xs md:text-sm'>(778) 861-8906</p>
         </div>
       </div>
       <div className='w-1/2 hidden md:flex justify-end'>

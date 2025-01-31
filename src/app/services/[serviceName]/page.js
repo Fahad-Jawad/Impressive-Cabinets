@@ -46,9 +46,6 @@ export default function Page() {
 
         {/* Right: Service Details */}
         <div className='flex-grow lg:pl-8 mt-6 lg:mt-0'>
-          <h2 className='text-bg-color text-sm md:text-base lg:text-xl font-bold'>
-            Service
-          </h2>
           <h3 className='text-4xl text-primary font-bold my-5 uppercase'>
             {formattedServiceName}
           </h3>

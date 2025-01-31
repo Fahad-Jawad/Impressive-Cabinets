@@ -21,17 +21,14 @@ export default function AboutUs({ page = 'landing' }) {
             About Us
           </h2>
           <h3 className='text-4xl md:text-5xl xl:text-6xl font-bold'>
-            Transform Your Kitchen with 25+ Years of Expertise
+            We offer you
           </h3>
           <p>
             {page === 'landing' ? (
               <>
-                At Impressive Cabinet Refacing LTD, we specialize in turning
-                ordinary kitchens into extraordinary spaces. With over 25 years
-                of experience, our team delivers expert cabinet refacing,
-                eco-friendly solutions, and custom upgrades like soft-close
-                drawers and crown molding. We combine craftsmanship, precision,
-                and passion to bring your dream kitchen to life.
+                We bring over 25 years of experience in cabinet refacing and
+                craftsmanship. Experience the difference that precision,
+                quality, and dedication can make.
               </>
             ) : (
               <>

@@ -8,7 +8,7 @@ export default function WorkQuality() {
           <h2 className='text-sm md:text-base lg:text-lg text-bg-white capitalize font-bold'>
           Interested? Let's Work on it.
           </h2>
-          <h3 className='text-3xl md:text-4xl lg:text-5xl font-bold text-white !leading-tight'>
+          <h3 className='text-2xl md:text-3xl lg:text-5xl font-bold text-white !leading-tight'>
             Dreaming of the perfect kitchen? <br /> We bring your vision to life
             with expert craftsmanship and custom design.
           </h3>

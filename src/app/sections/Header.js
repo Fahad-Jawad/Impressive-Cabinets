@@ -30,20 +30,19 @@ export default function Header() {
         <SwiperSlide>
           <div className='w-full h-full  flex items-center'>
             <div className='w-1/2 bg-gray-700 h-full relative slideContentBg'>
-              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 -right-2/3 md:-right-20 lg:-right-32 w-[150%] md:w-11/12 lg:w-4/5'>
+              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 -right-2/3 md:-right-20 lg:-right-32 w-[150%] md:w-11/12 lg:w-10/12'>
                 <div className='flex flex-col gap-2 '>
-                  <h3 className='text-3xl md:text-4xl  lg:text-6xl font-bold text-white !leading-tight'>
-                    Elegant Cabinets,Without the Renovation Hassle
+                  <h3 className='text-2xl md:text-2xl  lg:text-5xl font-bold text-white !leading-tight'>
+                    Fall in Love with your Kitchen over again
                   </h3>
-                  <p className='text-white text-xs lg:text-lg w-full md:w-2/3'>
-                    Our cabinet refacing services offer a quick and
-                    cost-effective way to refresh your kitchen. Say goodbye to
-                    messy remodels and hello to a stunning new look!
+                  <p className='text-white text-xs lg:text-sm w-full md:w-2/3'>
+                    Make your Kitchen a place to enjoy and share with Family and
+                    Friends
                   </p>
                 </div>
                 <Link href={'#contact'}>
-                  <button className='bg-white rounded-full p-1 lg:p-3 px-4 lg:px-12 w-max text-xxs lg:text-sm font-semibold uppercase'>
-                    Get a free Quote
+                  <button className='bg-white rounded-full p-1 lg:p-3 px-4 lg:px-12 w-max text-xxs lg:text-xs font-semibold uppercase'>
+                    Call Today 403-361-4968
                   </button>
                 </Link>
               </div>
@@ -54,19 +53,19 @@ export default function Header() {
         <SwiperSlide>
           <div className='w-full h-full  flex items-center'>
             <div className='w-1/2 bg-gray-700 h-full relative slideContentBg'>
-              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 -right-2/3 md:-right-20 lg:-right-32 w-[150%] md:w-11/12 lg:w-4/5'>
+              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 -right-2/3 md:-right-20 lg:-right-32 w-[150%] md:w-11/12 lg:w-10/12'>
                 <div className='flex flex-col gap-2 '>
-                  <h3 className='text-3xl md:text-4xl  lg:text-6xl font-bold text-white !leading-tight'>
-                    Transform Your Kitchen with Ease
+                  <h3 className='text-2xl md:text-2xl  lg:text-5xl font-bold text-white !leading-tight'>
+                    Fast, Affordable and Eco-Friendly solutions for updating
+                    your Kitchen/Bath
                   </h3>
-                  <p className='text-white text-xs lg:text-lg w-full md:w-2/3'>
-                    With over 25 years of expertise, we use premium materials
-                    and meticulous craftsmanship to create cabinets you'll love
-                    for years to come.
+                  <p className='text-white text-xs lg:text-sm w-full md:w-2/3'>
+                    Our cabinet refacing services offer a quick and
+                    cost-effective way to refresh your Kitchen
                   </p>
                 </div>
                 <Link href={'/projects'}>
-                  <button className='bg-white rounded-full p-1 lg:p-3 px-4 lg:px-12 w-max text-xxs lg:text-sm font-semibold uppercase'>
+                  <button className='bg-white rounded-full p-1 lg:p-3 px-4 lg:px-12 w-max text-xxs lg:text-xs font-semibold uppercase'>
                     Explore Our Projects
                   </button>
                 </Link>
@@ -78,18 +77,20 @@ export default function Header() {
         <SwiperSlide>
           <div className='w-full h-full  flex items-center'>
             <div className='w-1/2 bg-gray-700 h-full relative slideContentBg'>
-              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 -right-2/3 md:-right-20 lg:-right-32 w-[150%] md:w-11/12 lg:w-4/5'>
+              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 -right-2/3 md:-right-20 lg:-right-32 w-[150%] md:w-11/12 lg:w-10/12'>
                 <div className='flex flex-col gap-2 '>
-                  <h3 className='text-3xl md:text-4xl  lg:text-6xl font-bold text-white !leading-tight'>
-                    Beautiful Cabinets Within Your Budget
+                  <h3 className='text-2xl md:text-2xl  lg:text-5xl font-bold text-white !leading-tight'>
+                    We offer many material options – Thermofoil, Wood and
+                    Painting{' '}
                   </h3>
-                  <p className='text-white text-xs lg:text-lg w-full md:w-2/3'>
-                    Enjoy a high-end transformation without breaking the bank.
-                    Our affordable solutions make your dream kitchen a reality.
+                  <p className='text-white text-xs lg:text-sm w-full md:w-2/3'>
+                    We take existing Doors/Draw fronts and replace those with
+                    New Thermofoil or Wood Stained. With painting we use the
+                    existing Wood Doors/Draw fronts – Paint colors are endless
                   </p>
                 </div>
                 <Link href={'https://wa.me/14033614968'}>
-                  <button className='bg-white rounded-full p-1 lg:p-3 px-4 lg:px-12 w-max text-xxs lg:text-sm font-semibold uppercase'>
+                  <button className='bg-white rounded-full p-1 lg:p-3 px-4 lg:px-12 w-max text-xxs lg:text-xs font-semibold uppercase'>
                     Call Us Now
                   </button>
                 </Link>
@@ -102,19 +103,22 @@ export default function Header() {
         <SwiperSlide>
           <div className='w-full h-full  flex items-center'>
             <div className='w-1/2 bg-gray-700 h-full relative slideContentBg'>
-              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 -right-2/3 md:-right-20 lg:-right-32 w-[150%] md:w-11/12 lg:w-4/5'>
+              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 -right-2/3 md:-right-20 lg:-right-32 w-[150%] md:w-11/12 lg:w-10/12'>
                 <div className='flex flex-col gap-2 '>
-                  <h3 className='text-3xl md:text-4xl  lg:text-6xl font-bold text-white !leading-tight'>
-                    Cabinets That Reflect Your Style
+                  <h3 className='text-2xl md:text-2xl  lg:text-5xl font-bold text-white !leading-tight'>
+                    Let your Kitchen reflect your style
                   </h3>
-                  <p className='text-white text-xs lg:text-lg w-full md:w-2/3'>
-                    Choose from a wide range of finishes, colors, and designs to
-                    create cabinets that are uniquely yours. Your dream kitchen
-                    starts here.
+                  <p className='text-white text-xs lg:text-sm w-full md:w-4/5'>
+                    By adding Crown Moulding, Light Rail, Soft Close Hinges and
+                    Soft Close Drawer Slides and go even further to add Glass
+                    Inserts or Wine Racks. We can add extensions to the ceiling.
+                    Add pull-out Pan Drawers and Garbage/Recycling centers We
+                    also provide Laminate Countertops – There are a world of
+                    colors and textures to choose from
                   </p>
                 </div>
                 <Link href={'https://wa.me/14033614968'}>
-                  <button className='bg-white rounded-full p-1 lg:p-3 px-4 lg:px-12 w-max text-xxs lg:text-sm font-semibold uppercase'>
+                  <button className='bg-white rounded-full p-1 lg:p-3 px-4 lg:px-12 w-max text-xxs lg:text-xs font-semibold uppercase'>
                     Start Your Design Journey
                   </button>
                 </Link>

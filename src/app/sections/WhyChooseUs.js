@@ -26,12 +26,13 @@ export default function WhyChooseUs() {
           </div>
 
           <h3 class='text-xl font-semibold text-gray-900 '>
-            Tailored Solutions
+            Tailored Kitchen Elegance
           </h3>
           <p class='text-gray-500 '>
-            Custom-designed cabinets crafted to match your style and needs.
+            We craft premium-quality, handcrafted, and meticulously designed
+            custom kitchen cabinets tailored to your unique style, functional
+            needs, and aesthetic preferences.{' '}
           </p>
-          
         </div>
         <div class='flex flex-col gap-3 items-center text-center border-2 border-gray-100 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow'>
           <div className='rounded-full p-6 bg-primary'>
@@ -43,12 +44,11 @@ export default function WhyChooseUs() {
             />
           </div>
           <h3 class='text-xl font-semibold text-gray-900'>
-            Exceptional Service
+            Exceptional Customer Care
           </h3>
           <p class='text-gray-500'>
             Committed to delivering quality work and customer satisfaction.
           </p>
-          
         </div>
 
         <div class='flex flex-col gap-3 items-center text-center border-2 border-gray-100  p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow'>
@@ -61,12 +61,11 @@ export default function WhyChooseUs() {
             />
           </div>
           <h3 class='text-xl font-semibold text-gray-900 '>
-            25+ Years of Expertise
+            Experience
           </h3>
           <p class='text-gray-500 '>
             Reliable craftsmanship built on decades of industry experience.
           </p>
-          
         </div>
       </div>
     </div>
