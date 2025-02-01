@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className='mt-20  '>
       <div className='w-4/5 flex bg-primaryLight rounded-lg mx-auto relative z-20 -mb-10 flex-col lg:flex-row'>
-        <div className='w-full lg:w-1/4 p-4 shadow-xl'>
+        <div className='w-full lg:w-1/3 p-4 shadow-xl'>
           <div className='flex flex-col gap-3 text-white items-center w-full'>
             <Image
               src={'/images/icons/ClockWhite.svg'}
@@ -18,19 +18,8 @@ export default function Footer() {
             <p className='text-sm'>09:00am - 06:00pm</p>
           </div>
         </div>
-        <div className='w-full lg:w-1/4 p-4 shadow-xl'>
-          <div className='flex flex-col gap-3 text-white items-center w-full'>
-            <Image
-              src={'/images/icons/Location.svg'}
-              alt='clock'
-              width={35}
-              height={35}
-            />
-            <h2 className='text-lg font-bold'>Address</h2>
-            <p className='text-sm'>104 street shop 1 , calgary , Canada</p>
-          </div>
-        </div>
-        <div className='w-full lg:w-1/4 p-4 shadow-xl'>
+   
+        <div className='w-full lg:w-1/3 p-4 shadow-xl'>
           <div className='flex flex-col gap-3 text-white items-center w-full'>
             <Image
               src={'/images/icons/MobileWhite.svg'}
@@ -39,10 +28,10 @@ export default function Footer() {
               height={35}
             />
             <h2 className='text-lg font-bold'>Phone</h2>
-            <p className='text-sm'>403-821-1561 </p>
+            <p className='text-sm'>(778) 861-8906 (Vancouver) </p>
           </div>
         </div>
-        <div className='w-full lg:w-1/4 p-4 shadow-xl'>
+        <div className='w-full lg:w-1/3 p-4 shadow-xl'>
           <div className='flex flex-col gap-3 text-white items-center w-full'>
             <Image
               src={'/images/icons/MailWhite.svg'}
@@ -105,6 +94,20 @@ export default function Footer() {
             <div className='flex gap-5 items-center flex-col lg:flex-row text-center lg:text-start'>
               <div className='bg-white rounded-full p-2'>
                 <Image
+                  src={'/images/icons/MobileBlack.svg'}
+                  alt='modern design'
+                  width={21}
+                  height={21}
+                />
+              </div>
+              <div className='flex flex-col gap-1'>
+                <h3 className='text-base font-bold '>Vancouver</h3>
+                <p className='text-xs'>(778) 861-8906 (Vancouver)</p>
+              </div>
+            </div>
+            <div className='flex gap-5 items-center flex-col lg:flex-row text-center lg:text-start'>
+              <div className='bg-white rounded-full p-2'>
+                <Image
                   src={'/images/icons/MailBlack.svg'}
                   alt='modern design'
                   width={21}
@@ -117,20 +120,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className='flex gap-5 items-center flex-col lg:flex-row text-center lg:text-start'>
-              <div className='bg-white rounded-full p-2'>
-                <Image
-                  src={'/images/icons/LocationBlack.svg'}
-                  alt='modern design'
-                  width={26}
-                  height={26}
-                />
-              </div>
-              <div className='flex flex-col gap-1'>
-                <h3 className='text-base font-bold '>Our Location</h3>
-                <p className='text-xs'>104 street shop 1 , calgary , Canada</p>
-              </div>
-            </div>
+        
           </div>
         </div>
         <div className='w-full lg:w-1/4 flex flex-col gap-3 items-center lg:items-start'>

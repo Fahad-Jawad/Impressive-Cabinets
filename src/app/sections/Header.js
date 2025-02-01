@@ -19,7 +19,7 @@ export default function Header() {
         spaceBetween={0}
         slidesPerView={1}
         draggable
-        autoplay={{ delay: 5000 }}
+        // autoplay={{ delay: 5000 }}
         loop={true}
         navigation={{
           nextEl: '.swiper-button-next',
@@ -28,14 +28,14 @@ export default function Header() {
         className='h-[400px] lg:!h-[700px]'
       >
         <SwiperSlide>
-          <div className='w-full h-full  flex items-center'>
-            <div className='w-1/2 bg-gray-700 h-full relative slideContentBg'>
-              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 -right-2/3 md:-right-20 lg:-right-32 w-[150%] md:w-11/12 lg:w-10/12'>
+          <div className='w-full h-full relative  flex items-center'>
+            <div className='w-1/2 bg-gray-700 h-full  slideContentBg'>
+              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 left-10 md:left-[10%] lg:left-[20%] w-10/12  lg:w-8/12'>
                 <div className='flex flex-col gap-2 '>
-                  <h3 className='text-2xl md:text-2xl  lg:text-5xl font-bold text-white !leading-tight'>
+                  <h3 className='text-2xl md:text-2xl  lg:text-6xl font-bold text-white !leading-tight capitalize '>
                     Fall in Love with your Kitchen over again
                   </h3>
-                  <p className='text-white text-xs lg:text-sm w-full md:w-2/3'>
+                  <p className='text-white text-xs lg:text-lg w-full md:w-2/3'>
                     Make your Kitchen a place to enjoy and share with Family and
                     Friends
                   </p>
@@ -51,15 +51,15 @@ export default function Header() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='w-full h-full  flex items-center'>
-            <div className='w-1/2 bg-gray-700 h-full relative slideContentBg'>
-              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 -right-2/3 md:-right-20 lg:-right-32 w-[150%] md:w-11/12 lg:w-10/12'>
+          <div className='w-full h-full relative flex items-center'>
+            <div className='w-1/2 bg-gray-700 h-full  slideContentBg'>
+              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 left-10 md:left-[10%] lg:left-[20%]  w-10/12  lg:w-8/12'>
                 <div className='flex flex-col gap-2 '>
-                  <h3 className='text-2xl md:text-2xl  lg:text-5xl font-bold text-white !leading-tight'>
+                  <h3 className='text-2xl md:text-2xl  lg:text-6xl font-bold text-white !leading-tight capitalize'>
                     Fast, Affordable and Eco-Friendly solutions for updating
                     your Kitchen/Bath
                   </h3>
-                  <p className='text-white text-xs lg:text-sm w-full md:w-2/3'>
+                  <p className='text-white text-xs lg:text-lg w-full md:w-2/3'>
                     Our cabinet refacing services offer a quick and
                     cost-effective way to refresh your Kitchen
                   </p>
@@ -71,19 +71,19 @@ export default function Header() {
                 </Link>
               </div>
             </div>
-            <div className='w-1/2 flex z-10 slide1Bg h-full'></div>
+            <div className='w-1/2 flex z-10 slide2Bg h-full'></div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='w-full h-full  flex items-center'>
-            <div className='w-1/2 bg-gray-700 h-full relative slideContentBg'>
-              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 -right-2/3 md:-right-20 lg:-right-32 w-[150%] md:w-11/12 lg:w-10/12'>
+          <div className='w-full h-full relative flex items-center'>
+            <div className='w-1/2 bg-gray-700 h-full  slideContentBg'>
+              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 left-10 md:left-[10%] lg:left-[20%]  w-10/12  lg:w-8/12'>
                 <div className='flex flex-col gap-2 '>
-                  <h3 className='text-2xl md:text-2xl  lg:text-5xl font-bold text-white !leading-tight'>
+                  <h3 className='text-2xl md:text-2xl  lg:text-6xl font-bold text-white !leading-tight capitalize'>
                     We offer many material options – Thermofoil, Wood and
                     Painting{' '}
                   </h3>
-                  <p className='text-white text-xs lg:text-sm w-full md:w-2/3'>
+                  <p className='text-white text-xs lg:text-lg w-full md:w-2/3'>
                     We take existing Doors/Draw fronts and replace those with
                     New Thermofoil or Wood Stained. With painting we use the
                     existing Wood Doors/Draw fronts – Paint colors are endless
@@ -96,19 +96,19 @@ export default function Header() {
                 </Link>
               </div>
             </div>
-            <div className='w-1/2 flex z-10 slide1Bg h-full'></div>
+            <div className='w-1/2 flex z-10 slide3Bg h-full'></div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className='w-full h-full  flex items-center'>
-            <div className='w-1/2 bg-gray-700 h-full relative slideContentBg'>
-              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 -right-2/3 md:-right-20 lg:-right-32 w-[150%] md:w-11/12 lg:w-10/12'>
+          <div className='w-full h-full relative flex items-center'>
+            <div className='w-1/2 bg-gray-700 h-full  slideContentBg'>
+              <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 left-10 md:left-[10%] lg:left-[20%]  w-10/12  lg:w-8/12'>
                 <div className='flex flex-col gap-2 '>
-                  <h3 className='text-2xl md:text-2xl  lg:text-5xl font-bold text-white !leading-tight'>
+                  <h3 className='text-2xl md:text-2xl  lg:text-6xl font-bold text-white !leading-tight capitalize'>
                     Let your Kitchen reflect your style
                   </h3>
-                  <p className='text-white text-xs lg:text-sm w-full md:w-4/5'>
+                  <p className='text-white text-xs lg:text-lg w-full md:w-4/5'>
                     By adding Crown Moulding, Light Rail, Soft Close Hinges and
                     Soft Close Drawer Slides and go even further to add Glass
                     Inserts or Wine Racks. We can add extensions to the ceiling.
@@ -124,7 +124,7 @@ export default function Header() {
                 </Link>
               </div>
             </div>
-            <div className='w-1/2 flex z-10 slide1Bg h-full'></div>
+            <div className='w-1/2 flex z-10 slide4Bg h-full'></div>
           </div>
         </SwiperSlide>
         <div className='swiper-button-next !hidden md:!block'></div>

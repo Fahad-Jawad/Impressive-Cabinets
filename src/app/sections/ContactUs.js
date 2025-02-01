@@ -109,7 +109,7 @@ export default function ContactUs() {
     <div className='flex my-20 px-4 md:px-8 lg:px-12 2xl:px-20 gap-10 flex-col lg:flex-row' id='contact'>
       <div className='w-full lg:w-1/2 serviceSide'>
         <Image
-          src={'/images/contact-side.webp'}
+          src={'/images/Basement.webp'}
           alt='contact img'
           width={800}
           height={800}
