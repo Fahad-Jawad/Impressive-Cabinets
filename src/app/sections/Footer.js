@@ -28,6 +28,7 @@ export default function Footer() {
               height={35}
             />
             <h2 className='text-lg font-bold'>Phone</h2>
+            <p className='text-sm'>403-361-4968 </p>
             <p className='text-sm'>(778) 861-8906 (Vancouver) </p>
           </div>
         </div>

@@ -70,9 +70,6 @@ export default function Projects() {
                     <h2 className='text-white text-4xl font-semibold'>
                       Kitchen Project {index + 1}
                     </h2>
-                    <p className='text-white text-lg mt-4 capitalize'>
-                      bohemian / morden
-                    </p>
                   </div>
                 </div>
               </div>
