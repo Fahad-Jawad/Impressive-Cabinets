@@ -33,11 +33,10 @@ export default function Header() {
               <div className='flex flex-col gap-3 md:gap-4 lg:gap-6 z-20 absolute top-1/3 lg:top-1/4 left-10 md:left-[10%] lg:left-[20%] w-10/12  lg:w-8/12'>
                 <div className='flex flex-col gap-2 '>
                   <h3 className='text-2xl md:text-2xl  lg:text-6xl font-bold text-white !leading-tight capitalize '>
-                    Fall in Love with your Kitchen over again
+                    Fall in Love with your Kitchen again
                   </h3>
                   <p className='text-white text-xs lg:text-lg w-full md:w-2/3'>
-                    Make your Kitchen a place to enjoy and share with Family and
-                    Friends
+                  Call today for your quote in Calgary and nearby areas
                   </p>
                 </div>
                 <Link href={'#contact'}>

@@ -29,7 +29,7 @@ export default function Footer() {
             />
             <h2 className='text-lg font-bold'>Phone</h2>
             <p className='text-sm'>403-361-4968 </p>
-            <p className='text-sm'>(778) 861-8906 (Vancouver) </p>
+            <p className='text-sm'>(778) 861-8906 Vancouver (Lower mainland) </p>
           </div>
         </div>
         <div className='w-full lg:w-1/3 p-4 shadow-xl'>
@@ -103,7 +103,7 @@ export default function Footer() {
               </div>
               <div className='flex flex-col gap-1'>
                 <h3 className='text-base font-bold '>Vancouver</h3>
-                <p className='text-xs'>(778) 861-8906 (Vancouver)</p>
+                <p className='text-xs'>(778) 861-8906 Vancouver (Lower mainland)</p>
               </div>
             </div>
             <div className='flex gap-5 items-center flex-col lg:flex-row text-center lg:text-start'>

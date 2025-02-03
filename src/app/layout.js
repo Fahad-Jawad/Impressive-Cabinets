@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel='icon' href='/favicon.ico' />
       </head>
-      <body className={`${openSans.variable} antialiased relative`}>
+      <body className={`${openSans.variable} antialiased relative !dark:bg-white`}>
         <ModalProvider>
           <AppContent>{children}</AppContent>
         </ModalProvider>
