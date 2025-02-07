@@ -155,6 +155,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className='bg-white py-3 text-center text-primary text-base'>
+        Copyright &copy; 2025. All right reserved.
+      </div>
     </div>
   );
 }
