@@ -57,6 +57,7 @@ export default function Footer() {
               className='rounded-xl'
             />
           </div>
+          <p className='text-white text-sm font-bold text-center w-3/4'>Licensed and Insured</p>
         </div>
         <div className='w-full lg:w-1/4 flex flex-col gap-3 items-center lg:items-start'>
           <h2 className='text-xl font-bold uppercase '>Useful Link</h2>
@@ -156,7 +157,7 @@ export default function Footer() {
         </div>
       </div>
       <div className='bg-white py-3 text-center text-primary text-base'>
-        Copyright &copy; 2025. All right reserved.
+        Copyright &copy; 2025. All rights reserved.
       </div>
     </div>
   );
